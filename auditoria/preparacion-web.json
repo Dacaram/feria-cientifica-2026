@@ -8,11 +8,11 @@
   },
   "interrupted": {
     "games": 0,
-    "cached": 112
+    "cached": 149
   },
   "ready": {
     "games": 7,
-    "version": "iphone-2026-v5"
+    "version": "iphone-2026-v6"
   },
   "afterBrowserRestart": {
     "activated": true,
@@ -42,5 +42,5 @@
     "qrRequired": true,
     "installationRequired": false
   },
-  "resources": 149
+  "resources": 150
 }

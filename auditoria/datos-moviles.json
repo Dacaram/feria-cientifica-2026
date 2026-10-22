@@ -1,0 +1,19 @@
+{
+  "engine": "Chrome desktop, viewport móvil",
+  "simulation": "Un corte de conexión y un audio que sigue enviando datos durante más de 45 segundos",
+  "requests": [
+    {
+      "offset": 0
+    },
+    {
+      "offset": 524288
+    }
+  ],
+  "resumedSeconds": 51.335,
+  "servedBytes": 3987840,
+  "originalBytes": 3987840,
+  "percentageUpdates": 206,
+  "progressBeforeCompletion": true,
+  "completed": true,
+  "qrPreserved": true
+}

@@ -1,5 +1,5 @@
 {
-  "files": 156,
+  "files": 157,
   "images": 76,
   "mp3": 27,
   "modules": [
@@ -13,7 +13,7 @@
   ],
   "issues": [],
   "offline": {
-    "listed": 149,
+    "listed": 150,
     "omitted": [
       ".gitkeep",
       "icons/.gitkeep",
@@ -21,7 +21,7 @@
       "Visuales/.gitkeep"
     ],
     "sizes": [],
-    "bytes": 75605110
+    "bytes": 75613427
   },
   "protectedFiles": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "file": "feria-config.js",
-      "sha256": "223046104863b730e8c39da69c082311fa89eb2bbc14d8e4a224b34addcfd660"
+      "sha256": "1303656de33f86f0f0d0dd789ba6784976d1a1a2a1be19e8464502377b4d0a2d"
     },
     {
       "file": "Modulos/Tunel_del_tiempo/stations.js",

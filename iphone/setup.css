@@ -12,5 +12,7 @@ body.preparing-feria{min-height:100vh;min-height:100svh;background:radial-gradie
 .setup-card .back-link{margin-top:24px;color:#c5d7f4;font-size:14px}
 .setup-card #offline-panel,.setup-card #activation-step{width:100%}
 .setup-card progress{width:100%;height:16px;margin:0 0 20px;accent-color:#a0ffde}
+.setup-card #offline-percent{display:block;font-size:42px;line-height:1.2;font-weight:800;color:#baffdf;margin:0 0 8px;font-variant-numeric:tabular-nums}
+.setup-card #offline-size{font-size:14px;margin:0 0 16px;font-variant-numeric:tabular-nums}
 .setup-card a:focus-visible,.setup-card button:focus-visible{outline:3px solid #ffe09b;outline-offset:5px}
 [hidden]{display:none!important}

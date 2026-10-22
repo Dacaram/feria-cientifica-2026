@@ -1,0 +1,30 @@
+{
+  "clockNote": "El límite original de 45 s se reduce a 40 ms para reproducir el fallo sin esperar 90 s.",
+  "originalDeadline": {
+    "attempts": 2,
+    "cancelledDespiteContinuousData": true
+  },
+  "continuousSlowTransfer": {
+    "completed": true,
+    "progressBeforeCompletion": true
+  },
+  "resume": {
+    "rangeStart": 6144,
+    "partialDataPreserved": true
+  },
+  "serverWithoutRange": {
+    "correctFullFile": true
+  },
+  "silentConnection": {
+    "detected": true
+  },
+  "corruptTransfer": {
+    "rejected": true
+  },
+  "storageFull": {
+    "identifiedWithoutRepeatedDownloads": true
+  },
+  "previousVersionReuse": {
+    "verifiedBySHA256": true
+  }
+}
