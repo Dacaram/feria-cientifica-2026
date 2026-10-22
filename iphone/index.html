@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080d26">
+  <title>Feria Científica 2026 · Liceo Los Almendros</title>
+  <link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="pwa.css"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Feria 2026"><script src="feria-config.js"></script><script src="feria-storage.js"></script><script type="module" src="app-pwa.js"></script><link rel="stylesheet" href="ios-adaptaciones.css"></head>
+<body class="activation-required iphone-home">
+  <main>
+    <header class="topbar"><span class="brand-star" aria-hidden="true">✦</span><span>UNA FERIA PARA RECORDAR</span><span class="edition">EDICIÓN 2026</span></header>
+    <section class="welcome" aria-labelledby="welcome-title">
+      <img class="galaxy" src="Visuales/via-lactea.jpg" alt="Panorama de estrellas de la Vía Láctea">
+      <div class="hero-shade"></div>
+      <div class="hero-top"><span class="souvenir">✧ RECUERDO CONMEMORATIVO</span><img class="school-badge" src="Visuales/insignia.png" alt="Insignia del Liceo Los Almendros"></div>
+      <div class="hero-copy">
+        <h1 id="welcome-title">Feria Científica<br><span>2026</span></h1>
+        <h2>Liceo Los Almendros</h2>
+        <p>¡La feria sigue contigo! Guarda un pedacito de este día especial y vuelve a vivir la emoción de explorar, jugar y descubrir.</p>
+        <p class="memory">Un recuerdo conmemorativo de nuestra Feria Científica 2026, para que la curiosidad nos acompañe mucho más allá de la feria.</p>
+        <button class="launch" id="activate-app" type="button">Activar con el QR de la feria <span aria-hidden="true">▣</span></button><p class="activation-message" id="activation-message" role="status" aria-live="polite">Escanea una sola vez el QR disponible en la feria para habilitar las siete experiencias en este teléfono.</p>
+      </div>
+      <span class="hero-orbit" aria-hidden="true"></span>
+    </section>
+    <section class="pwa-panel install-guide" id="install-guide"><h2>Llévate la feria en tu iPhone</h2><p>Primero abre esta página en <b>Safari</b>, toca <b>Compartir → Añadir a la pantalla de inicio</b> y, si aparece, deja activado «Abrir como app web». Después abre el nuevo icono y activa la app con el mismo QR de la feria.</p><p class="small">La primera visita y la descarga de los juegos y audios requieren Internet.</p></section><section class="pwa-panel" id="offline-panel" hidden><h2>Tu feria, también sin Internet</h2><p id="offline-status" role="status" aria-live="polite">Guarda los juegos, las imágenes y los 27 audios en este dispositivo.</p><progress id="offline-progress" value="0" max="100" hidden></progress><button id="download-offline" type="button">Guardar juegos y audios</button><p class="small">Espera a que aparezca «Todo listo sin Internet». Si borras los datos de Safari o el iPhone libera este almacenamiento, tendrás que volver a descargar los recursos.</p></section>
+    <template id="locked-experiences">
+    <section id="experiencias" class="expeditions" aria-labelledby="experience-title">
+      <div class="section-heading"><div><span class="eyebrow">TU BITÁCORA DE EXPLORACIÓN</span><h2 id="experience-title">¿Adónde vamos hoy?</h2></div><span class="count">7<br><small>AVENTURAS</small></span></div>
+      <p class="section-intro">Elige tu misión. Toca, juega y déjate sorprender.</p>
+      <nav class="experiences" aria-label="Elige una experiencia">
+        <a class="experience defense" href="Modulos/Defensa/index.html"><img class="card-space" src="Visuales/estrellas.png" alt=""><img class="card-object" src="Modulos/Defensa/assets/planet.png" alt=""><img class="card-ship" src="Modulos/Defensa/assets/ship.png" alt=""><span class="card-top"><span>MISIÓN 01</span><span>ACCIÓN</span></span><div class="card-copy"><h3>Defensa de<br>Almendrino</h3><p>¡Meteoritos a la vista! Nuestro planeta te necesita.</p><span class="card-cta">¡A defender! <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience landing" href="Modulos/Aterrizaje/index.html"><img class="card-space" src="Visuales/aterrizaje.png" alt=""><span class="card-top"><span>MISIÓN 02</span><span>PILOTAJE</span></span><div class="card-copy"><h3>Aterrizaje<br>espacial</h3><p>Cinco mundos. Una nave. ¿Lograrás aterrizar?</p><span class="card-cta">¡A los mandos! <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience weight" href="Modulos/Peso_espacial/index.html"><img class="card-space" src="Visuales/estrellas.png" alt=""><img class="card-object" src="Visuales/saturno.png" alt=""><span class="card-top"><span>MISIÓN 03</span><span>DESCUBRE</span></span><div class="card-copy"><h3>Tu peso<br>en el espacio</h3><p>¿Más ligero en la Luna? ¡Vamos a comprobarlo!</p><span class="card-cta">¡Dar el salto! <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience age" href="Modulos/Edad_planetaria/index.html"><img class="card-space" src="Visuales/via-lactea.jpg" alt=""><img class="card-object" src="Visuales/astronauta.png" alt=""><span class="card-top"><span>MISIÓN 04</span><span>VIAJA</span></span><div class="card-copy"><h3>Cumpleaños<br>planetarios</h3><p>Súbete al cohete. ¡Tu edad cambia de órbita!</p><span class="card-cta">¡Despegar! <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience mystery" href="Modulos/Adivina_el_planeta/index.html"><img class="card-space" src="Visuales/estrellas.png" alt=""><img class="card-object" src="Visuales/tierra.png" alt=""><span class="question" aria-hidden="true">?</span><span class="card-top"><span>MISIÓN 05</span><span>ENIGMAS</span></span><div class="card-copy"><h3>Adivina<br>el planeta</h3><p>Recibe las pistas y conviértete en detective espacial.</p><span class="card-cta">¡Investigar! <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience solar" href="Modulos/Maqueta/index.html"><img class="card-space" src="Visuales/estrellas.png" alt=""><img class="card-object" src="Visuales/sol.png" alt=""><span class="card-top"><span>MISIÓN 06</span><span>ESCUCHA</span></span><div class="card-copy"><h3>De paseo por<br>el sistema solar</h3><p>Desde el Sol hasta la Tierra: una ruta para escuchar.</p><span class="card-cta">¡Explorar la maqueta! <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience time" href="Modulos/Tunel_del_tiempo/index.html"><img class="card-space" src="Visuales/via-lactea.jpg" alt=""><span class="time-portal" aria-hidden="true"></span><span class="card-top"><span>MISIÓN 07</span><span>23 ESTACIONES</span></span><div class="card-copy"><h3>Túnel<br>del tiempo</h3><p>De Sputnik a nuestros sueños de llegar a Marte.</p><span class="card-cta">¡Activar el portal! <b aria-hidden="true">↗</b></span></div></a>
+      </nav>
+    </section>
+    <section class="keepsake"><span aria-hidden="true">✧</span><p>La feria termina.<br><strong>Las ganas de descubrir, nunca.</strong></p></section>
+    </template>
+    <footer><details class="credits"><summary>Créditos <span aria-hidden="true">＋</span></summary><div><p class="credit-label">APLICACIÓN CREADA POR</p><p class="author">Danilo Carriel Ramirez</p><p>Profesor de Física y Matemática<br>Liceo Los Almendros</p><p class="dedication">Creada como recuerdo conmemorativo de la Feria Científica 2026.</p><p class="image-credit">Fotografía de la Vía Láctea: ESO/S. Brunier · <a href="https://www.eso.org/public/images/eso0932a/" target="_blank" rel="noopener">Fuente</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Imagen recortada para adaptarla a las tarjetas.</p></div></details><p class="footer-edition">FERIA CIENTÍFICA 2026 · UN RECUERDO PARA SEGUIR EXPLORANDO</p></footer>
+  </main><section class="qr-dialog" id="qr-dialog" role="dialog" aria-modal="true" aria-labelledby="qr-title" hidden><div class="qr-card"><button class="qr-close" id="qr-close" type="button" aria-label="Cerrar lector de QR">✕</button><h2 id="qr-title">¡Activa tu aventura!</h2><p>Apunta al mismo QR de activación del Liceo Los Almendros que se usa en Android.</p><div class="camera-frame"><video id="qr-video" playsinline autoplay muted></video></div><p id="qr-status" role="status" aria-live="polite">Preparando cámara…</p><label class="photo-picker">Leer una foto del QR<input id="qr-photo" type="file" accept="image/*"></label><p class="small">La imagen se lee en este dispositivo; no se envía a un servidor.</p></div></section>
+</body>
+</html>

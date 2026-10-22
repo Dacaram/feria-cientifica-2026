@@ -1,0 +1,598 @@
+{
+  "version": "iphone-2026-v3",
+  "bytes": 74151382,
+  "files": [
+    {
+      "url": "app-pwa.js",
+      "bytes": 4007
+    },
+    {
+      "url": "Audios/Juegos/LEEME.txt",
+      "bytes": 73
+    },
+    {
+      "url": "Audios/Maqueta/LEEME.txt",
+      "bytes": 73
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_01.mp3",
+      "bytes": 3987840
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_02.mp3",
+      "bytes": 2310720
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_03.mp3",
+      "bytes": 2655360
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_04.mp3",
+      "bytes": 4930560
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/LEEME.txt",
+      "bytes": 73
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_01.mp3",
+      "bytes": 735360
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_02.mp3",
+      "bytes": 825600
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_03.mp3",
+      "bytes": 1196160
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_04.mp3",
+      "bytes": 792000
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_05.mp3",
+      "bytes": 1200960
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_06.mp3",
+      "bytes": 716160
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_07.mp3",
+      "bytes": 805440
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_08.mp3",
+      "bytes": 1207680
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_09.mp3",
+      "bytes": 685440
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_10.mp3",
+      "bytes": 1133760
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_11.mp3",
+      "bytes": 1397760
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_12.mp3",
+      "bytes": 1240320
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_13.mp3",
+      "bytes": 1208640
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_14.mp3",
+      "bytes": 855360
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_15.mp3",
+      "bytes": 1104000
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_16.mp3",
+      "bytes": 705600
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_17.mp3",
+      "bytes": 1379520
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_18.mp3",
+      "bytes": 1416960
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_19.mp3",
+      "bytes": 1305600
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_20.mp3",
+      "bytes": 1296000
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_21.mp3",
+      "bytes": 1441920
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_22.mp3",
+      "bytes": 793920
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_23.mp3",
+      "bytes": 984000
+    },
+    {
+      "url": "experiencias.css",
+      "bytes": 12639
+    },
+    {
+      "url": "feria-config.js",
+      "bytes": 177
+    },
+    {
+      "url": "feria-storage.js",
+      "bytes": 1882
+    },
+    {
+      "url": "icons/apple-touch-icon.png",
+      "bytes": 15374
+    },
+    {
+      "url": "icons/icon-192.png",
+      "bytes": 17179
+    },
+    {
+      "url": "icons/icon-512.png",
+      "bytes": 108269
+    },
+    {
+      "url": "icons/icon-maskable-512.png",
+      "bytes": 80495
+    },
+    {
+      "url": "index.html",
+      "bytes": 8909
+    },
+    {
+      "url": "ios-adaptaciones.css",
+      "bytes": 1155
+    },
+    {
+      "url": "manifest.webmanifest",
+      "bytes": 763
+    },
+    {
+      "url": "menu.css",
+      "bytes": 9309
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-00.webp",
+      "bytes": 28364
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-01.webp",
+      "bytes": 9312
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-02.webp",
+      "bytes": 42930
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-03.webp",
+      "bytes": 18030
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-04.webp",
+      "bytes": 15808
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-05.webp",
+      "bytes": 11728
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-06.webp",
+      "bytes": 5112
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-07.webp",
+      "bytes": 7984
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-08.webp",
+      "bytes": 27562
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-09.webp",
+      "bytes": 21042
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/clue-bank.js",
+      "bytes": 16311
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/game.js",
+      "bytes": 10438
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/index.html",
+      "bytes": 6381
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/music.js",
+      "bytes": 2434
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/planet-data.js",
+      "bytes": 3395
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/style.css",
+      "bytes": 5997
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/base.webp",
+      "bytes": 229732
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/cover.webp",
+      "bytes": 299238
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/earth.webp",
+      "bytes": 205042
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/flame.webp",
+      "bytes": 45292
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/icon.webp",
+      "bytes": 83430
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/lander.webp",
+      "bytes": 91274
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/mars.webp",
+      "bytes": 169768
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/medal.webp",
+      "bytes": 147560
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/moon.webp",
+      "bytes": 211686
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/pad.webp",
+      "bytes": 22030
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/rocks.webp",
+      "bytes": 211736
+    },
+    {
+      "url": "Modulos/Aterrizaje/facts.js",
+      "bytes": 2315
+    },
+    {
+      "url": "Modulos/Aterrizaje/game.js",
+      "bytes": 10669
+    },
+    {
+      "url": "Modulos/Aterrizaje/index.html",
+      "bytes": 1697
+    },
+    {
+      "url": "Modulos/Aterrizaje/physics.js",
+      "bytes": 1710
+    },
+    {
+      "url": "Modulos/Aterrizaje/style.css",
+      "bytes": 4385
+    },
+    {
+      "url": "Modulos/Defensa/assets/background.png",
+      "bytes": 1985433
+    },
+    {
+      "url": "Modulos/Defensa/assets/boss.png",
+      "bytes": 2552114
+    },
+    {
+      "url": "Modulos/Defensa/assets/bullet.png",
+      "bytes": 338095
+    },
+    {
+      "url": "Modulos/Defensa/assets/double.png",
+      "bytes": 1217096
+    },
+    {
+      "url": "Modulos/Defensa/assets/emblem.png",
+      "bytes": 1117467
+    },
+    {
+      "url": "Modulos/Defensa/assets/large.png",
+      "bytes": 2496811
+    },
+    {
+      "url": "Modulos/Defensa/assets/medium.png",
+      "bytes": 1793896
+    },
+    {
+      "url": "Modulos/Defensa/assets/planet.png",
+      "bytes": 2170905
+    },
+    {
+      "url": "Modulos/Defensa/assets/shield.png",
+      "bytes": 1624187
+    },
+    {
+      "url": "Modulos/Defensa/assets/ship.png",
+      "bytes": 1214374
+    },
+    {
+      "url": "Modulos/Defensa/assets/small.png",
+      "bytes": 626668
+    },
+    {
+      "url": "Modulos/Defensa/audio.js",
+      "bytes": 3893
+    },
+    {
+      "url": "Modulos/Defensa/index.html",
+      "bytes": 16949
+    },
+    {
+      "url": "Modulos/Edad_planetaria/app.js",
+      "bytes": 4776
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-00.webp",
+      "bytes": 28364
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-01.webp",
+      "bytes": 9312
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-02.webp",
+      "bytes": 42930
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-03.webp",
+      "bytes": 18030
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-04.webp",
+      "bytes": 15808
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-05.webp",
+      "bytes": 11728
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-06.webp",
+      "bytes": 5112
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-07.webp",
+      "bytes": 7984
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-08.webp",
+      "bytes": 27562
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-09.webp",
+      "bytes": 21042
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astronauta-cohete.webp",
+      "bytes": 131948
+    },
+    {
+      "url": "Modulos/Edad_planetaria/index.html",
+      "bytes": 5304
+    },
+    {
+      "url": "Modulos/Edad_planetaria/music.js",
+      "bytes": 2497
+    },
+    {
+      "url": "Modulos/Edad_planetaria/rotation.js",
+      "bytes": 5268
+    },
+    {
+      "url": "Modulos/Edad_planetaria/travel.css",
+      "bytes": 3414
+    },
+    {
+      "url": "Modulos/Edad_planetaria/travel.js",
+      "bytes": 7642
+    },
+    {
+      "url": "Modulos/Maqueta/assets/luna.webp",
+      "bytes": 21042
+    },
+    {
+      "url": "Modulos/Maqueta/assets/mercurio.webp",
+      "bytes": 28364
+    },
+    {
+      "url": "Modulos/Maqueta/assets/sol.webp",
+      "bytes": 27562
+    },
+    {
+      "url": "Modulos/Maqueta/assets/tierra.webp",
+      "bytes": 42930
+    },
+    {
+      "url": "Modulos/Maqueta/assets/venus.webp",
+      "bytes": 9312
+    },
+    {
+      "url": "Modulos/Maqueta/audio-guide.js",
+      "bytes": 1485
+    },
+    {
+      "url": "Modulos/Maqueta/index.html",
+      "bytes": 4732
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-00.webp",
+      "bytes": 28364
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-01.webp",
+      "bytes": 9312
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-02.webp",
+      "bytes": 42930
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-03.webp",
+      "bytes": 18030
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-04.webp",
+      "bytes": 15808
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-05.webp",
+      "bytes": 11728
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-06.webp",
+      "bytes": 5112
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-07.webp",
+      "bytes": 7984
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-08.webp",
+      "bytes": 27562
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-09.webp",
+      "bytes": 21042
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-10.webp",
+      "bytes": 22370
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-11.webp",
+      "bytes": 13492
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-12.webp",
+      "bytes": 33108
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-13.webp",
+      "bytes": 22598
+    },
+    {
+      "url": "Modulos/Peso_espacial/index.html",
+      "bytes": 14598
+    },
+    {
+      "url": "Modulos/Peso_espacial/rotation.js",
+      "bytes": 5268
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/app.js",
+      "bytes": 3229
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/index.html",
+      "bytes": 2751
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/stations.js",
+      "bytes": 12517
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/style.css",
+      "bytes": 4125
+    },
+    {
+      "url": "navigation.js",
+      "bytes": 1142
+    },
+    {
+      "url": "pwa-guard.js",
+      "bytes": 1078
+    },
+    {
+      "url": "pwa.css",
+      "bytes": 2426
+    },
+    {
+      "url": "scanner-ui.js",
+      "bytes": 3182
+    },
+    {
+      "url": "vendor/qr-scanner-LICENSE.txt",
+      "bytes": 1071
+    },
+    {
+      "url": "vendor/qr-scanner-worker.min.js",
+      "bytes": 43994
+    },
+    {
+      "url": "vendor/qr-scanner.min.js",
+      "bytes": 15844
+    },
+    {
+      "url": "Visuales/almendrino.png",
+      "bytes": 720896
+    },
+    {
+      "url": "Visuales/astronauta.png",
+      "bytes": 1437180
+    },
+    {
+      "url": "Visuales/aterrizaje.png",
+      "bytes": 2216775
+    },
+    {
+      "url": "Visuales/estrellas.png",
+      "bytes": 1985433
+    },
+    {
+      "url": "Visuales/insignia.png",
+      "bytes": 1117467
+    },
+    {
+      "url": "Visuales/saturno.png",
+      "bytes": 1377949
+    },
+    {
+      "url": "Visuales/sol.png",
+      "bytes": 1903412
+    },
+    {
+      "url": "Visuales/tierra.png",
+      "bytes": 2235385
+    },
+    {
+      "url": "Visuales/via-lactea.jpg",
+      "bytes": 155879
+    },
+    {
+      "url": "Visuales/voyager.png",
+      "bytes": 2424896
+    }
+  ]
+}
