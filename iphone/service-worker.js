@@ -1,21 +1,33 @@
 importScripts('./feria-config.js','./feria-storage.js');
 const BASE=new URL('./',self.location.href),PREFIX='feria2026:'+BASE.pathname+':';
 const SHELL=PREFIX+'shell:'+FeriaConfig.cacheVersion,FULL=PREFIX+'full:'+FeriaConfig.cacheVersion;
-const SHELL_FILES=['index.html','menu.css','experiencias.css','pwa.css','ios-adaptaciones.css','app-pwa.js','scanner-ui.js','feria-config.js','feria-storage.js','manifest.webmanifest','recursos-offline.json','vendor/qr-scanner.min.js','vendor/qr-scanner-worker.min.js','Visuales/insignia.png','Visuales/via-lactea.jpg','icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-512.png','icons/apple-touch-icon.png'];
+const SHELL_FILES=['index.html','setup.css','pwa.css','app-pwa.js','scanner-ui.js','feria-config.js','feria-storage.js','manifest.webmanifest','recursos-offline.json','vendor/qr-scanner.min.js','vendor/qr-scanner-worker.min.js','icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-512.png','icons/apple-touch-icon.png'];
 let downloadPromise=null;
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(SHELL);await cache.addAll(SHELL_FILES.map(file=>new URL(file,BASE).href));await self.skipWaiting();})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const name of await caches.keys())if(name.startsWith(PREFIX+'shell:')&&name!==SHELL)await caches.delete(name);await self.clients.claim();})()));
 async function find(url){return (await (await caches.open(FULL)).match(url))||(await (await caches.open(SHELL)).match(url));}
 async function notify(data){for(const client of await self.clients.matchAll({includeUncontrolled:true,type:'window'}))if(client.url.startsWith(BASE.href))client.postMessage(data);}
 async function manifest(){const response=await find(new URL('recursos-offline.json',BASE).href)||await fetch(new URL('recursos-offline.json',BASE));if(!response.ok)throw Error('No se encontró la lista de recursos');return response.json();}
-async function readyStatus(){const plan=await manifest(),cache=await caches.open(FULL);let ready=true;for(const item of plan.files)if(!(await cache.match(new URL(item.url,BASE).href))){ready=false;break;}return {ready,megabytes:Math.ceil(plan.bytes/1048576)};}
+async function readyStatus(){const plan=await manifest(),cache=await caches.open(FULL);let ready=true;for(const item of plan.files)if(!(await cache.match(new URL(item.url,BASE).href))){ready=false;break;}if(ready&&await FeriaStore.activated())await FeriaStore.set('offline-version',FeriaConfig.cacheVersion);return {ready,megabytes:Math.ceil(plan.bytes/1048576)};}
 async function downloadAll(){
   if(!await FeriaStore.activated())throw Error('Activa la app primero');
-  const plan=await manifest(),cache=await caches.open(FULL);let done=0;
-  for(const item of plan.files){const url=new URL(item.url,BASE).href;
-    if(!await cache.match(url)){let response=await (await caches.open(SHELL)).match(url);if(!response)response=await fetch(url,{cache:'reload',credentials:'same-origin'});if(!response.ok||response.status!==200)throw Error('Descarga incompleta');await cache.put(url,response);}
-    done++;await notify({type:'OFFLINE_PROGRESS',done,total:plan.files.length,percent:Math.floor(done/plan.files.length*100)});
+  const plan=await manifest(),cache=await caches.open(FULL),shell=await caches.open(SHELL);let done=0,bytes=0,next=0,failure=null;
+  async function fetchFile(url){
+    for(let attempt=0;attempt<2;attempt++){
+      const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45000);
+      try{const response=await fetch(url,{cache:'reload',credentials:'same-origin',signal:controller.signal});if(!response.ok||response.status!==200)throw Error('Descarga incompleta');await cache.put(url,response);return;}
+      catch(error){if(attempt===1)throw error;}
+      finally{clearTimeout(timer);}
+    }
   }
+  async function downloadNext(){
+    while(!failure&&next<plan.files.length){const item=plan.files[next++],url=new URL(item.url,BASE).href;
+      try{if(!await cache.match(url)){const response=await shell.match(url);if(response)await cache.put(url,response);else await fetchFile(url);}
+        done++;bytes+=item.bytes;await notify({type:'OFFLINE_PROGRESS',done,total:plan.files.length,percent:Math.floor(bytes/plan.bytes*100)});
+      }catch(error){failure=error;}
+    }
+  }
+  await Promise.all([downloadNext(),downloadNext(),downloadNext()]);if(failure)throw failure;
   await FeriaStore.set('offline-version',FeriaConfig.cacheVersion);
   for(const name of await caches.keys())if(name.startsWith(PREFIX+'full:')&&name!==FULL)await caches.delete(name);
   await notify({type:'OFFLINE_READY'});
@@ -43,9 +55,9 @@ self.addEventListener('fetch',event=>{
   const request=event.request,url=new URL(request.url);
   if(!url.href.startsWith(BASE.href)||!['GET','HEAD'].includes(request.method))return;
   event.respondWith((async()=>{
-    if(url.pathname.startsWith(new URL('Modulos/',BASE).pathname)&&!await FeriaStore.activated()){
-      if(request.mode==='navigate')return Response.redirect(new URL('index.html',BASE).href,302);
-      return new Response('Activa la app con el QR de la feria.',{status:403});
+    if(url.pathname.startsWith(new URL('Modulos/',BASE).pathname)){
+      if(request.mode==='navigate'&&!await FeriaStore.prepared())return Response.redirect(new URL('index.html',BASE).href,302);
+      if(!await FeriaStore.activated())return new Response('Activa la app con el QR de la feria.',{status:403});
     }
     const lookup=new URL(url);if(lookup.pathname===BASE.pathname)lookup.pathname+='index.html';lookup.search='';
     const cached=await find(lookup.href);

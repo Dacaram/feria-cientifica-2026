@@ -16,5 +16,16 @@
   async function set(key,value){const db=await open();return new Promise((resolve,reject)=>{const tx=db.transaction('settings','readwrite');tx.objectStore('settings').put(value,key);tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('No se pudo guardar'));});}
   async function activated(){try{const record=await get('activation');return record?.digest===FeriaConfig.activationHash&&record?.version===FeriaConfig.activationVersion;}catch(e){return false;}}
   async function accept(value){if(typeof value!=='string'||value.length>256)return false;const data=new TextEncoder().encode(value);const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',data)),b=>b.toString(16).padStart(2,'0')).join('');if(digest!==FeriaConfig.activationHash)return false;await set('activation',{digest,version:FeriaConfig.activationVersion,at:new Date().toISOString()});return activated();}
-  self.FeriaStore={get,set,activated,accept};
+  async function prepared(){
+    if(!await activated()||await get('offline-version')!==FeriaConfig.cacheVersion||!('caches'in self))return false;
+    const prefix='feria2026:'+base+':',cache=await caches.open(prefix+'full:'+FeriaConfig.cacheVersion),shell=await caches.open(prefix+'shell:'+FeriaConfig.cacheVersion);
+    const origin=typeof location!=='undefined'?location.origin:self.location.origin;
+    const response=await shell.match(new URL(base+'recursos-offline.json',origin).href);
+    if(!response)return false;
+    const plan=await response.json();
+    if(plan.version!==FeriaConfig.cacheVersion)return false;
+    for(const item of plan.files)if(!await cache.match(new URL(item.url,new URL(base,origin)).href))return false;
+    return true;
+  }
+  self.FeriaStore={get,set,activated,accept,prepared};
 })();

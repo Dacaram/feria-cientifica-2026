@@ -1,10 +1,10 @@
 {
-  "version": "iphone-2026-v4",
-  "bytes": 75602289,
+  "version": "iphone-2026-v5",
+  "bytes": 75605110,
   "files": [
     {
       "url": "app-pwa.js",
-      "bytes": 4007
+      "bytes": 4667
     },
     {
       "url": "Audios/Juegos/LEEME.txt",
@@ -136,7 +136,7 @@
     },
     {
       "url": "feria-storage.js",
-      "bytes": 1882
+      "bytes": 2647
     },
     {
       "url": "icons/apple-touch-icon.png",
@@ -156,7 +156,7 @@
     },
     {
       "url": "index.html",
-      "bytes": 8998
+      "bytes": 8771
     },
     {
       "url": "ios-adaptaciones.css",
@@ -532,7 +532,7 @@
     },
     {
       "url": "pwa-guard.js",
-      "bytes": 1078
+      "bytes": 1193
     },
     {
       "url": "pwa.css",
@@ -541,6 +541,10 @@
     {
       "url": "scanner-ui.js",
       "bytes": 3182
+    },
+    {
+      "url": "setup.css",
+      "bytes": 1508
     },
     {
       "url": "vendor/qr-scanner-LICENSE.txt",

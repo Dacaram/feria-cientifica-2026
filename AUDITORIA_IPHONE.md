@@ -1,5 +1,7 @@
 # Auditoría iPhone/PWA — 22 de octubre de 2026
 
+Actualización posterior: la versión v5 permite usar la web sin instalar y exige preparar todos los recursos antes de mostrar la feria. Su comportamiento y sus pruebas actuales están en [PREPARACION_WEB.md](PREPARACION_WEB.md). Los resultados siguientes documentan la auditoría original de v3 y su corrección v4.
+
 Publicación examinada: https://dacaram.github.io/feria-cientifica-2026/iphone/
 
 Base examinada: commit `e568a34ebc97d6c451a7a4e3fe4110dbd7f7cecc`, caché `iphone-2026-v3`.

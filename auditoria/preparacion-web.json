@@ -1,0 +1,46 @@
+{
+  "engine": "WebKit",
+  "errors": [],
+  "beforeQR": {
+    "games": 0,
+    "heavyResourcesRequested": 0,
+    "standalone": false
+  },
+  "interrupted": {
+    "games": 0,
+    "cached": 112
+  },
+  "ready": {
+    "games": 7,
+    "version": "iphone-2026-v5"
+  },
+  "afterBrowserRestart": {
+    "activated": true,
+    "prepared": true,
+    "network": false
+  },
+  "modules": [
+    "Adivina_el_planeta",
+    "Aterrizaje",
+    "Defensa",
+    "Edad_planetaria",
+    "Maqueta",
+    "Peso_espacial",
+    "Tunel_del_tiempo"
+  ],
+  "media": {
+    "images": 76,
+    "audios": 27,
+    "bad": []
+  },
+  "stations": 23,
+  "storageRepair": {
+    "blockedUntilRepaired": true,
+    "activationRetained": true
+  },
+  "androidWeb": {
+    "qrRequired": true,
+    "installationRequired": false
+  },
+  "resources": 149
+}
