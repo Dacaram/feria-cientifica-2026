@@ -1,6 +1,6 @@
 {
-  "version": "iphone-2026-v3",
-  "bytes": 74151382,
+  "version": "iphone-2026-v4",
+  "bytes": 75602289,
   "files": [
     {
       "url": "app-pwa.js",
@@ -156,7 +156,7 @@
     },
     {
       "url": "index.html",
-      "bytes": 8909
+      "bytes": 8998
     },
     {
       "url": "ios-adaptaciones.css",
@@ -168,7 +168,7 @@
     },
     {
       "url": "menu.css",
-      "bytes": 9309
+      "bytes": 9839
     },
     {
       "url": "Modulos/Adivina_el_planeta/assets/astro-00.webp",
@@ -348,7 +348,7 @@
     },
     {
       "url": "Modulos/Defensa/index.html",
-      "bytes": 16949
+      "bytes": 17228
     },
     {
       "url": "Modulos/Edad_planetaria/app.js",
@@ -556,7 +556,7 @@
     },
     {
       "url": "Visuales/almendrino.png",
-      "bytes": 720896
+      "bytes": 2170905
     },
     {
       "url": "Visuales/astronauta.png",

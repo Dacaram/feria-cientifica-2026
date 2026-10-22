@@ -1,0 +1,144 @@
+{
+  "files": 155,
+  "images": 76,
+  "mp3": 27,
+  "modules": [
+    "Adivina_el_planeta",
+    "Aterrizaje",
+    "Defensa",
+    "Edad_planetaria",
+    "Maqueta",
+    "Peso_espacial",
+    "Tunel_del_tiempo"
+  ],
+  "issues": [],
+  "offline": {
+    "listed": 148,
+    "omitted": [
+      ".gitkeep",
+      "icons/.gitkeep",
+      "vendor/.gitkeep",
+      "Visuales/.gitkeep"
+    ],
+    "sizes": [],
+    "bytes": 75602289
+  },
+  "protectedFiles": [
+    {
+      "file": "Audios/Maqueta/maqueta_01.mp3",
+      "sha256": "dc27ac6291bd9627eccb8bbac2c028c6a6bec150b510f3a1b9d0df2efcecbd30"
+    },
+    {
+      "file": "Audios/Maqueta/maqueta_02.mp3",
+      "sha256": "477d9418d2b7b75b68a3da5bda012c06d889fee2ba25bf8078f44e19aada19cb"
+    },
+    {
+      "file": "Audios/Maqueta/maqueta_03.mp3",
+      "sha256": "3dd30b4a575a913b9dc5b97bb6333e7b290bed8b72e1308b441d4bcbec72f747"
+    },
+    {
+      "file": "Audios/Maqueta/maqueta_04.mp3",
+      "sha256": "67d543bc606292d1633ad74b5f21091843b37a12e2e328fc048b218b7018e1cd"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_01.mp3",
+      "sha256": "46b037d5609026daafb538533917c2deda43a1edc1acea78444ec160b6111982"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_02.mp3",
+      "sha256": "2381fb7b3c0bd923b0af282f709dee5318fe16ac973824730c99d02555703e36"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_03.mp3",
+      "sha256": "ac01d6bece63f818ce3cb6fa46c5c7154d66a9ce82a9d20a8a8506b8e3ea0d85"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_04.mp3",
+      "sha256": "9f405f655507fd3cb5a186e5013e18cd4d0cfe961eca36d129382f964654c40d"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_05.mp3",
+      "sha256": "bc49b231a1f8d5f574cc48cd370ef1ca40b397b5e0188e021648026f3178b272"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_06.mp3",
+      "sha256": "f9bc906b601d176b392cf32b71d377ef92da9937368b9be351c659803c8b2196"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_07.mp3",
+      "sha256": "d258a2f6e90e147e641faf0833dd47ff54f17a07045e646db0b5cd5dcd8b3dd3"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_08.mp3",
+      "sha256": "c01cb490edf4b22e2fecb109349f926f05939e5ff15c309a76bbb2d19ff45d9b"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_09.mp3",
+      "sha256": "f712d7446fe1e49e6fc34e33841b73738d7a03662b4f3a47d04a5e98b3792fb0"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_10.mp3",
+      "sha256": "e44cfa1019308a736b01f6c493684856bf14ec192b53183ecacaae963e7187af"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_11.mp3",
+      "sha256": "91596361d085c85c646eca43e63c5cbfe553f0a3efc7df2c2cea8fcfc6c88d98"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_12.mp3",
+      "sha256": "96a4dafc51d967bb2bcacab665cc43b7a22a081456ff37102baf04fc2c86d455"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_13.mp3",
+      "sha256": "77744385cea91ece5dc702f0d10219e6fe1f78f223079045ec46bdda33299855"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_14.mp3",
+      "sha256": "878d94d1d3af54f63b762f6157fd406402d8d97155c9484e3ac36b14c9960cf9"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_15.mp3",
+      "sha256": "8aab039bff3479c5f7a772fb7c01526b4c3e2e9adf229c36734c62ac47e6eee5"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_16.mp3",
+      "sha256": "bb638d836b355ced69c48962b67e057df400603ae50d6eeaefd198536ffd7f36"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_17.mp3",
+      "sha256": "17bff42105670c9273cbc311b95e7c33d6adfd947074b8657b3eb39a25003efb"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_18.mp3",
+      "sha256": "53d8420034727ceb3b7216db51eb7db6852c7b3f9b47cb031181d605cc01de36"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_19.mp3",
+      "sha256": "8a7dab64c6f16cc9200ad738af05ad0f72e126e37068694adc9e2e04af3bd22c"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_20.mp3",
+      "sha256": "d831cb57c473543b0c816e2aa4097a69aeb0aaa2ff51af1ca82e56ed028082ce"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_21.mp3",
+      "sha256": "efe1ba181b05cac1816d5acdb84b2d3c9024db1b7b0794c148ea756d0b9d3444"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_22.mp3",
+      "sha256": "3631fa2723f3608883a6c4eab623c3d742fd74a9e84bc170f8f6e8c7a096002f"
+    },
+    {
+      "file": "Audios/Tunel_del_tiempo/tunel_23.mp3",
+      "sha256": "1dbafda7896a6a5b60ea19ce25fc25e456166b551a4f6b7ab439c4bd60e78e05"
+    },
+    {
+      "file": "feria-config.js",
+      "sha256": "ebfe305dbaf4795c736751945706abd4897fe454583c1c1f7ce78ee551beaea4"
+    },
+    {
+      "file": "Modulos/Tunel_del_tiempo/stations.js",
+      "sha256": "d840a2de56a2e54761253bbb3b2240df480009bb261582201631ca9e341a9d1b"
+    }
+  ]
+}

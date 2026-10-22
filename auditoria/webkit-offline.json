@@ -1,0 +1,66 @@
+{
+  "errors": [],
+  "cached": {
+    "files": 148,
+    "missing": []
+  },
+  "home": {
+    "title": "Feria Científica 2026 · Liceo Los Almendros",
+    "broken": []
+  },
+  "pages": [
+    {
+      "mod": "Adivina_el_planeta",
+      "images": 10,
+      "bad": []
+    },
+    {
+      "mod": "Aterrizaje",
+      "images": 11,
+      "bad": []
+    },
+    {
+      "mod": "Defensa",
+      "images": 11,
+      "bad": []
+    },
+    {
+      "mod": "Edad_planetaria",
+      "images": 11,
+      "bad": []
+    },
+    {
+      "mod": "Maqueta",
+      "images": 5,
+      "bad": []
+    },
+    {
+      "mod": "Peso_espacial",
+      "images": 14,
+      "bad": []
+    },
+    {
+      "mod": "Tunel_del_tiempo",
+      "images": 0,
+      "bad": []
+    }
+  ],
+  "stations": 23,
+  "range": {
+    "status": 206,
+    "bytes": 100,
+    "contentRange": "bytes 0-99/735360"
+  },
+  "sharedImages": {
+    "images": 14,
+    "bad": []
+  },
+  "audioRanges": {
+    "files": 27,
+    "bad": []
+  },
+  "defenseFailure": {
+    "message": "No se pudo cargar una imagen\n\nComprueba la conexión y vuelve a intentarlo. Para jugar sin Internet, guarda todos los recursos desde el menú de misiones.\n\nRecargar",
+    "playButtons": 0
+  }
+}
