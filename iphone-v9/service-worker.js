@@ -1,3 +1,4 @@
+// Reglas explícitas por etapa V.9 revisión 2
 // Feria Científica 2026 V.9
 // Orientación por misión y reinicio completo v4
 // Actualización Selenita: pantalla móvil completa v2
