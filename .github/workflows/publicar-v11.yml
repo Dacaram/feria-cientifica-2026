@@ -1,0 +1,28 @@
+name: Publicar APK Feria Cientifica V11
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'releases/v11/**'
+      - '.github/workflows/publicar-v11.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruir y comprobar el APK firmado V11
+        run: python3 releases/v11/rebuild.py
+      - name: Publicar descarga Android V11
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v11 >/dev/null 2>&1; then
+            gh release upload v11 Feria_Cientifica_2026_V11.apk --clobber
+          else
+            gh release create v11 Feria_Cientifica_2026_V11.apk --target "$GITHUB_SHA" --title "Feria Científica 2026 V.11" --notes "App independiente V.11. Preguntas por etapa sin respuestas ni guardado y sin pistas en la presentación."
+          fi
