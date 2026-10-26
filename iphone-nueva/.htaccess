@@ -1,0 +1,11 @@
+# Opcional para Apache. La app también funciona en hosting estático sin Apache.
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType application/javascript .js
+  AddType audio/mpeg .mp3
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html|service-worker\.js|feria-config\.js|recursos-offline\.json|manifest\.webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
