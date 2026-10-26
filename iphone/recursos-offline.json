@@ -1,12 +1,7 @@
 {
-  "version": "iphone-2026-v6",
-  "bytes": 75613427,
+  "version": "iphone-2026-v7-selenita",
+  "bytes": 75669299,
   "files": [
-    {
-      "url": "app-pwa.js",
-      "bytes": 6749,
-      "sha256": "f6fe6391c4b748def8eedebc7fcfb1653d0a829afa58587f23199f2c76b59895"
-    },
     {
       "url": "Audios/Juegos/LEEME.txt",
       "bytes": 73,
@@ -156,61 +151,6 @@
       "url": "Audios/Tunel_del_tiempo/tunel_23.mp3",
       "bytes": 984000,
       "sha256": "1dbafda7896a6a5b60ea19ce25fc25e456166b551a4f6b7ab439c4bd60e78e05"
-    },
-    {
-      "url": "experiencias.css",
-      "bytes": 12639,
-      "sha256": "200d75b23ad425a43943a3180a3389f7de552f64339d2c19840fed40b4f105c0"
-    },
-    {
-      "url": "feria-config.js",
-      "bytes": 176,
-      "sha256": "1303656de33f86f0f0d0dd789ba6784976d1a1a2a1be19e8464502377b4d0a2d"
-    },
-    {
-      "url": "feria-storage.js",
-      "bytes": 2647,
-      "sha256": "247f18f97ac916c11d51b0e467848909d356efa456d6112efc8643bd827617ef"
-    },
-    {
-      "url": "icons/apple-touch-icon.png",
-      "bytes": 15374,
-      "sha256": "2e2eca3f854a95bbb2b04f6fcb0c59f9cc117ca0d485af09df39dad6d810b846"
-    },
-    {
-      "url": "icons/icon-192.png",
-      "bytes": 17179,
-      "sha256": "ff0f8ba0dc1f27e0e8c4b9fda33583f7408ac13d1251e743897ae18f8eafc4f8"
-    },
-    {
-      "url": "icons/icon-512.png",
-      "bytes": 108269,
-      "sha256": "184c2bb655686d3c8fa9c98e6ad4eaee221c1145f9565236f60b1e23867f9f33"
-    },
-    {
-      "url": "icons/icon-maskable-512.png",
-      "bytes": 80495,
-      "sha256": "bc8a209d6b69985ee85b8e60f7957504e6da045ed34274f1b1ac3e7e71be63a4"
-    },
-    {
-      "url": "index.html",
-      "bytes": 8891,
-      "sha256": "e9e46123c8249ef6b97e4c3b1249657dc3b64a9562632f2d3fa56ed1d55c89a0"
-    },
-    {
-      "url": "ios-adaptaciones.css",
-      "bytes": 1155,
-      "sha256": "08ae678bb2d2127fd8a63f4703dbafe8a0d78931dbe90048a223279076ac0e96"
-    },
-    {
-      "url": "manifest.webmanifest",
-      "bytes": 763,
-      "sha256": "843133316445a603e365773bfbebc0bc2a26148652983b2d5a017d147689f1b9"
-    },
-    {
-      "url": "menu.css",
-      "bytes": 9839,
-      "sha256": "e9e09aa57a0cae80bfc31e9b9b4ed84d34d128d70bffbd4142969ea6c998853a"
     },
     {
       "url": "Modulos/Adivina_el_planeta/assets/astro-00.webp",
@@ -638,6 +578,16 @@
       "sha256": "9439d25ed539a3dc8a729283f8dab69567b2f7c3b70b15db1fca1bc12087a87d"
     },
     {
+      "url": "Modulos/Rescate_Selenita/assets/insignia-los-almendros.jpeg",
+      "bytes": 4140,
+      "sha256": "0a4857f8ed25261805026592cb2a884d5ba667386910b3c1ec1afb3e815f7c7c"
+    },
+    {
+      "url": "Modulos/Rescate_Selenita/index.html",
+      "bytes": 51209,
+      "sha256": "7dabf1610096ac0e579043715580ea4419adb646fdf0103625b2ff7be33c98d2"
+    },
+    {
       "url": "Modulos/Tunel_del_tiempo/app.js",
       "bytes": 3229,
       "sha256": "471a893a198e9ed44ff4a74dac545f2406bbc4869b99972cfe0b8451fbaa4b70"
@@ -656,51 +606,6 @@
       "url": "Modulos/Tunel_del_tiempo/style.css",
       "bytes": 4125,
       "sha256": "05a578a78bf40f67b4bab7e8428d00a8a09f69404b98f4a56bb9a2c856cf72f7"
-    },
-    {
-      "url": "navigation.js",
-      "bytes": 1142,
-      "sha256": "78739c1e9b27c45e6bb95af2b4c0cb19f9a90a5cbc23756a532a7a59f410c37f"
-    },
-    {
-      "url": "offline-download.js",
-      "bytes": 5870,
-      "sha256": "7cafaf221fa8476cc8c47f6c030035f9eb062f8a9145ab8eac88ca86089587ec"
-    },
-    {
-      "url": "pwa-guard.js",
-      "bytes": 1193,
-      "sha256": "a7df6991f49bfe2fd8b1c944ea0879e6f063867710966bc2b0a93abeec0c3698"
-    },
-    {
-      "url": "pwa.css",
-      "bytes": 2426,
-      "sha256": "3a3d147fe9027ea1d29cee3f9c19bb0a731d69012f3b1e3273457ff19aafa3a3"
-    },
-    {
-      "url": "scanner-ui.js",
-      "bytes": 3182,
-      "sha256": "863b06e7e1962b4ff460a08a343433033183752daff895364894722ee5c5ceaa"
-    },
-    {
-      "url": "setup.css",
-      "bytes": 1754,
-      "sha256": "5a99a8c22ef85987f63d4e2f8275bf206926ffea9af344ac05087cb0512ae1d0"
-    },
-    {
-      "url": "vendor/qr-scanner-LICENSE.txt",
-      "bytes": 1071,
-      "sha256": "f9e6b44d80d0eb44442c7e66af8a756709a61e4d9adf0a54b8951a92ece734e2"
-    },
-    {
-      "url": "vendor/qr-scanner-worker.min.js",
-      "bytes": 43994,
-      "sha256": "f4d8445f5a15c4e5f71a8c8c062c6443f09db370b8d3fe1fbdc7fe7889630d14"
-    },
-    {
-      "url": "vendor/qr-scanner.min.js",
-      "bytes": 15844,
-      "sha256": "0564e4cf84b94cac80213b4f779bd215bb0876a91c19df28baf97766f4fd5484"
     },
     {
       "url": "Visuales/almendrino.png",
@@ -751,6 +656,111 @@
       "url": "Visuales/voyager.png",
       "bytes": 2424896,
       "sha256": "f748811679d5f3343f24c5a6e26bb5455d538b98c0d3a7c6a1e9291215fcdbbc"
+    },
+    {
+      "url": "app-pwa.js",
+      "bytes": 6749,
+      "sha256": "f6fe6391c4b748def8eedebc7fcfb1653d0a829afa58587f23199f2c76b59895"
+    },
+    {
+      "url": "experiencias.css",
+      "bytes": 12639,
+      "sha256": "200d75b23ad425a43943a3180a3389f7de552f64339d2c19840fed40b4f105c0"
+    },
+    {
+      "url": "feria-config.js",
+      "bytes": 185,
+      "sha256": "7c71033bf1448a243a1cb1de4fad8774b313db245908df962ab9e8fd8ab41f05"
+    },
+    {
+      "url": "feria-storage.js",
+      "bytes": 2647,
+      "sha256": "247f18f97ac916c11d51b0e467848909d356efa456d6112efc8643bd827617ef"
+    },
+    {
+      "url": "icons/apple-touch-icon.png",
+      "bytes": 15374,
+      "sha256": "2e2eca3f854a95bbb2b04f6fcb0c59f9cc117ca0d485af09df39dad6d810b846"
+    },
+    {
+      "url": "icons/icon-192.png",
+      "bytes": 17179,
+      "sha256": "ff0f8ba0dc1f27e0e8c4b9fda33583f7408ac13d1251e743897ae18f8eafc4f8"
+    },
+    {
+      "url": "icons/icon-512.png",
+      "bytes": 108269,
+      "sha256": "184c2bb655686d3c8fa9c98e6ad4eaee221c1145f9565236f60b1e23867f9f33"
+    },
+    {
+      "url": "icons/icon-maskable-512.png",
+      "bytes": 80495,
+      "sha256": "bc8a209d6b69985ee85b8e60f7957504e6da045ed34274f1b1ac3e7e71be63a4"
+    },
+    {
+      "url": "index.html",
+      "bytes": 9405,
+      "sha256": "10191e239516303c59b480ae38cf3c757ea30fe0a47864b40a5c0548904d10e9"
+    },
+    {
+      "url": "ios-adaptaciones.css",
+      "bytes": 1155,
+      "sha256": "08ae678bb2d2127fd8a63f4703dbafe8a0d78931dbe90048a223279076ac0e96"
+    },
+    {
+      "url": "manifest.webmanifest",
+      "bytes": 763,
+      "sha256": "843133316445a603e365773bfbebc0bc2a26148652983b2d5a017d147689f1b9"
+    },
+    {
+      "url": "menu.css",
+      "bytes": 9839,
+      "sha256": "e9e09aa57a0cae80bfc31e9b9b4ed84d34d128d70bffbd4142969ea6c998853a"
+    },
+    {
+      "url": "navigation.js",
+      "bytes": 1142,
+      "sha256": "78739c1e9b27c45e6bb95af2b4c0cb19f9a90a5cbc23756a532a7a59f410c37f"
+    },
+    {
+      "url": "offline-download.js",
+      "bytes": 5870,
+      "sha256": "7cafaf221fa8476cc8c47f6c030035f9eb062f8a9145ab8eac88ca86089587ec"
+    },
+    {
+      "url": "pwa-guard.js",
+      "bytes": 1193,
+      "sha256": "a7df6991f49bfe2fd8b1c944ea0879e6f063867710966bc2b0a93abeec0c3698"
+    },
+    {
+      "url": "pwa.css",
+      "bytes": 2426,
+      "sha256": "3a3d147fe9027ea1d29cee3f9c19bb0a731d69012f3b1e3273457ff19aafa3a3"
+    },
+    {
+      "url": "scanner-ui.js",
+      "bytes": 3182,
+      "sha256": "863b06e7e1962b4ff460a08a343433033183752daff895364894722ee5c5ceaa"
+    },
+    {
+      "url": "setup.css",
+      "bytes": 1754,
+      "sha256": "5a99a8c22ef85987f63d4e2f8275bf206926ffea9af344ac05087cb0512ae1d0"
+    },
+    {
+      "url": "vendor/qr-scanner-LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "f9e6b44d80d0eb44442c7e66af8a756709a61e4d9adf0a54b8951a92ece734e2"
+    },
+    {
+      "url": "vendor/qr-scanner-worker.min.js",
+      "bytes": 43994,
+      "sha256": "f4d8445f5a15c4e5f71a8c8c062c6443f09db370b8d3fe1fbdc7fe7889630d14"
+    },
+    {
+      "url": "vendor/qr-scanner.min.js",
+      "bytes": 15844,
+      "sha256": "0564e4cf84b94cac80213b4f779bd215bb0876a91c19df28baf97766f4fd5484"
     }
   ]
 }
