@@ -1,0 +1,766 @@
+{
+  "version": "iphone-2026-v9",
+  "bytes": 75671127,
+  "files": [
+    {
+      "url": "Audios/Juegos/LEEME.txt",
+      "bytes": 73,
+      "sha256": "7792abf176ab0e7f900cab7f9afbdd7d81749e15cbc6981e53a21097ea68120c"
+    },
+    {
+      "url": "Audios/Maqueta/LEEME.txt",
+      "bytes": 73,
+      "sha256": "7792abf176ab0e7f900cab7f9afbdd7d81749e15cbc6981e53a21097ea68120c"
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_01.mp3",
+      "bytes": 3987840,
+      "sha256": "dc27ac6291bd9627eccb8bbac2c028c6a6bec150b510f3a1b9d0df2efcecbd30"
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_02.mp3",
+      "bytes": 2310720,
+      "sha256": "477d9418d2b7b75b68a3da5bda012c06d889fee2ba25bf8078f44e19aada19cb"
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_03.mp3",
+      "bytes": 2655360,
+      "sha256": "3dd30b4a575a913b9dc5b97bb6333e7b290bed8b72e1308b441d4bcbec72f747"
+    },
+    {
+      "url": "Audios/Maqueta/maqueta_04.mp3",
+      "bytes": 4930560,
+      "sha256": "67d543bc606292d1633ad74b5f21091843b37a12e2e328fc048b218b7018e1cd"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/LEEME.txt",
+      "bytes": 73,
+      "sha256": "7792abf176ab0e7f900cab7f9afbdd7d81749e15cbc6981e53a21097ea68120c"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_01.mp3",
+      "bytes": 735360,
+      "sha256": "46b037d5609026daafb538533917c2deda43a1edc1acea78444ec160b6111982"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_02.mp3",
+      "bytes": 825600,
+      "sha256": "2381fb7b3c0bd923b0af282f709dee5318fe16ac973824730c99d02555703e36"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_03.mp3",
+      "bytes": 1196160,
+      "sha256": "ac01d6bece63f818ce3cb6fa46c5c7154d66a9ce82a9d20a8a8506b8e3ea0d85"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_04.mp3",
+      "bytes": 792000,
+      "sha256": "9f405f655507fd3cb5a186e5013e18cd4d0cfe961eca36d129382f964654c40d"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_05.mp3",
+      "bytes": 1200960,
+      "sha256": "bc49b231a1f8d5f574cc48cd370ef1ca40b397b5e0188e021648026f3178b272"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_06.mp3",
+      "bytes": 716160,
+      "sha256": "f9bc906b601d176b392cf32b71d377ef92da9937368b9be351c659803c8b2196"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_07.mp3",
+      "bytes": 805440,
+      "sha256": "d258a2f6e90e147e641faf0833dd47ff54f17a07045e646db0b5cd5dcd8b3dd3"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_08.mp3",
+      "bytes": 1207680,
+      "sha256": "c01cb490edf4b22e2fecb109349f926f05939e5ff15c309a76bbb2d19ff45d9b"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_09.mp3",
+      "bytes": 685440,
+      "sha256": "f712d7446fe1e49e6fc34e33841b73738d7a03662b4f3a47d04a5e98b3792fb0"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_10.mp3",
+      "bytes": 1133760,
+      "sha256": "e44cfa1019308a736b01f6c493684856bf14ec192b53183ecacaae963e7187af"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_11.mp3",
+      "bytes": 1397760,
+      "sha256": "91596361d085c85c646eca43e63c5cbfe553f0a3efc7df2c2cea8fcfc6c88d98"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_12.mp3",
+      "bytes": 1240320,
+      "sha256": "96a4dafc51d967bb2bcacab665cc43b7a22a081456ff37102baf04fc2c86d455"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_13.mp3",
+      "bytes": 1208640,
+      "sha256": "77744385cea91ece5dc702f0d10219e6fe1f78f223079045ec46bdda33299855"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_14.mp3",
+      "bytes": 855360,
+      "sha256": "878d94d1d3af54f63b762f6157fd406402d8d97155c9484e3ac36b14c9960cf9"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_15.mp3",
+      "bytes": 1104000,
+      "sha256": "8aab039bff3479c5f7a772fb7c01526b4c3e2e9adf229c36734c62ac47e6eee5"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_16.mp3",
+      "bytes": 705600,
+      "sha256": "bb638d836b355ced69c48962b67e057df400603ae50d6eeaefd198536ffd7f36"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_17.mp3",
+      "bytes": 1379520,
+      "sha256": "17bff42105670c9273cbc311b95e7c33d6adfd947074b8657b3eb39a25003efb"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_18.mp3",
+      "bytes": 1416960,
+      "sha256": "53d8420034727ceb3b7216db51eb7db6852c7b3f9b47cb031181d605cc01de36"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_19.mp3",
+      "bytes": 1305600,
+      "sha256": "8a7dab64c6f16cc9200ad738af05ad0f72e126e37068694adc9e2e04af3bd22c"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_20.mp3",
+      "bytes": 1296000,
+      "sha256": "d831cb57c473543b0c816e2aa4097a69aeb0aaa2ff51af1ca82e56ed028082ce"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_21.mp3",
+      "bytes": 1441920,
+      "sha256": "efe1ba181b05cac1816d5acdb84b2d3c9024db1b7b0794c148ea756d0b9d3444"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_22.mp3",
+      "bytes": 793920,
+      "sha256": "3631fa2723f3608883a6c4eab623c3d742fd74a9e84bc170f8f6e8c7a096002f"
+    },
+    {
+      "url": "Audios/Tunel_del_tiempo/tunel_23.mp3",
+      "bytes": 984000,
+      "sha256": "1dbafda7896a6a5b60ea19ce25fc25e456166b551a4f6b7ab439c4bd60e78e05"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-00.webp",
+      "bytes": 28364,
+      "sha256": "0b90da6c4500e4242a0f42b8397d7c2c44c4134659ba088bfade4abccdc28b82"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-01.webp",
+      "bytes": 9312,
+      "sha256": "bf7e10deec22dc147f66334b0ff66431ff652ebe41164132b50dca94bd6cc32b"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-02.webp",
+      "bytes": 42930,
+      "sha256": "e1160eec0fa210291a24703970767f0a9e5cc676356d3a99b5294e0b8307d935"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-03.webp",
+      "bytes": 18030,
+      "sha256": "08fd514f023333bba97bb40d38a776976d7cd1a35bb92e583f0ab869e5b14bd6"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-04.webp",
+      "bytes": 15808,
+      "sha256": "a3d538824db8946abd0e2a073826cc90659d646bdf812e56e9748502a8be09c5"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-05.webp",
+      "bytes": 11728,
+      "sha256": "296829a3287edcb19ac4f47e30589771d7fb9ffa09f6229c4182e1ff1bae2625"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-06.webp",
+      "bytes": 5112,
+      "sha256": "7e6f5e4ebbdf7dca2b5d37555524ed090ceb3885b4a9274de78cf36182f356ce"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-07.webp",
+      "bytes": 7984,
+      "sha256": "6604f68d65da51fc4d779ee4d484b29b54222a8a8345daa507a62c6e84de2858"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-08.webp",
+      "bytes": 27562,
+      "sha256": "ad4ee025e93ac21548be66b1b448b6ed033cf33a104c71cb693e58d209bba982"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/assets/astro-09.webp",
+      "bytes": 21042,
+      "sha256": "77da7938281064f6f6ea396f0fb985e0b4cd71acfb061d50ca5a0918ccc05fa7"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/clue-bank.js",
+      "bytes": 16311,
+      "sha256": "c98dccc7d2aa018d25d60a9cf52100067eb5ba2d9124b7c69cdf7677e81e0a43"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/game.js",
+      "bytes": 10438,
+      "sha256": "8c958dbef47e0891f6c28a1dd8ea821969bba6c8e30f253266466fefc421cd10"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/index.html",
+      "bytes": 6381,
+      "sha256": "707349e47b2cf6e0786f61a61e7d7adffc6accd125cbfda77542bf33b5296b39"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/music.js",
+      "bytes": 2434,
+      "sha256": "0ca15002163fa35c17617f8b48c46effec70ec7bfbacbedbb334961eca8d7e53"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/planet-data.js",
+      "bytes": 3395,
+      "sha256": "54ab513f15c3b6005145f3c77123bf11f85f7a2343ea83585b4de20cab6c15f6"
+    },
+    {
+      "url": "Modulos/Adivina_el_planeta/style.css",
+      "bytes": 5997,
+      "sha256": "de6c679d376b0c55ddaeeb3969a0c09a21dbd193ec1398fc5a87f638969e3382"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/base.webp",
+      "bytes": 229732,
+      "sha256": "bdc65a9bf1a97beb091f9595565fc086b88088f320b49ca4cf740f135b810ad4"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/cover.webp",
+      "bytes": 299238,
+      "sha256": "724d9156bb716b477348f93142411b1b118279d40cd4ae16a77b7d743a72c761"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/earth.webp",
+      "bytes": 205042,
+      "sha256": "ee165b2fe0e61ef2757a143b5e0ca35c5db01d5d1c045932dc10d42feae3846b"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/flame.webp",
+      "bytes": 45292,
+      "sha256": "036634e81ff98d59a52b00f603a4fe92436f46898d1841626cc0dffbde3e546f"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/icon.webp",
+      "bytes": 83430,
+      "sha256": "59caf234e70c089d0507d2654a2b85dfe2527596ab16c4e3fa63e0094c5a1136"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/lander.webp",
+      "bytes": 91274,
+      "sha256": "fefa98014da8fc364a6037a4dd9d1255cc8f7e829e7e3f2371612f985e516161"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/mars.webp",
+      "bytes": 169768,
+      "sha256": "e827c8337f32321d25d7709ec017e1a19356955039984e3d302b35099bf1e132"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/medal.webp",
+      "bytes": 147560,
+      "sha256": "29d5e38cfa7d7c55fdf9e997feb164e776669387d0568b6286f47f6ac8947bc2"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/moon.webp",
+      "bytes": 211686,
+      "sha256": "d95640a453cad71ce059159da63f0ea008453a25bcd466c4d2117f2822e76821"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/pad.webp",
+      "bytes": 22030,
+      "sha256": "224fcd91eac758d73c3654ed3a0b89a87da80e1255e83aa7b12c990020b82a73"
+    },
+    {
+      "url": "Modulos/Aterrizaje/assets/rocks.webp",
+      "bytes": 211736,
+      "sha256": "b1cba4b4c09bbde7093a50882668c4b81b517031e6e341c8ef00e0bac88aa664"
+    },
+    {
+      "url": "Modulos/Aterrizaje/facts.js",
+      "bytes": 2315,
+      "sha256": "b5659235adbf06499a723af573e14f6e74914500016564201f08ce9c52ba4d1f"
+    },
+    {
+      "url": "Modulos/Aterrizaje/game.js",
+      "bytes": 10669,
+      "sha256": "8c69bde81fdc2c90fbbe91ed87e8c00cfcd4c9e07bbbe4139fc65957e83ce6d8"
+    },
+    {
+      "url": "Modulos/Aterrizaje/index.html",
+      "bytes": 1697,
+      "sha256": "e3219e61cdfc3fb323bbf6242b2ba1678aeed33aeca53cd16f5e36c71c599428"
+    },
+    {
+      "url": "Modulos/Aterrizaje/physics.js",
+      "bytes": 1710,
+      "sha256": "656054780a1f112ee363f287c713c8a881ddfeb6ed9e67b22d734d346e36d9cf"
+    },
+    {
+      "url": "Modulos/Aterrizaje/style.css",
+      "bytes": 4385,
+      "sha256": "de05fe2072c8b7875f15776bd1c3867d10e15e2de8f7a0d21a0a8703a1718bd5"
+    },
+    {
+      "url": "Modulos/Defensa/assets/background.png",
+      "bytes": 1985433,
+      "sha256": "8256333f87f1dd17eb0ffdaebe18a9c3bbaa82e2caf73d42eb5b34185c6f1333"
+    },
+    {
+      "url": "Modulos/Defensa/assets/boss.png",
+      "bytes": 2552114,
+      "sha256": "9f709bef15d98db1b10d3f05a62fba050f9080c1d84b61a6ff7ef5f1be6b4b3c"
+    },
+    {
+      "url": "Modulos/Defensa/assets/bullet.png",
+      "bytes": 338095,
+      "sha256": "4fa9b372b083cad28e2cd8fe164ece3e50c3cee5cc3b0f44dba49fac908c6041"
+    },
+    {
+      "url": "Modulos/Defensa/assets/double.png",
+      "bytes": 1217096,
+      "sha256": "f9b60e4750ebb6dbaa0128a990b21ad373e42acd86de37a6e34e12abdd40b4c5"
+    },
+    {
+      "url": "Modulos/Defensa/assets/emblem.png",
+      "bytes": 1117467,
+      "sha256": "f19f70f5e408d1a46642b8434f1ef01e7a3f5a9d57c2bea4902c139becce3628"
+    },
+    {
+      "url": "Modulos/Defensa/assets/large.png",
+      "bytes": 2496811,
+      "sha256": "af1dc4fa9478c47779daa9d4591c54c38a0612aa10aea9955d524c0bcb4d90a0"
+    },
+    {
+      "url": "Modulos/Defensa/assets/medium.png",
+      "bytes": 1793896,
+      "sha256": "fddac897c7b16fa152fa24d0d5278d2f18e3faaa47274a661b9a7f86df55450e"
+    },
+    {
+      "url": "Modulos/Defensa/assets/planet.png",
+      "bytes": 2170905,
+      "sha256": "86aad8eddfcc8285950a732292ccdd0c61ea306fce030c9aa28b241263b814d6"
+    },
+    {
+      "url": "Modulos/Defensa/assets/shield.png",
+      "bytes": 1624187,
+      "sha256": "1734245c6b19a0d3b5da4fdcb003ccd2b3a3ce5c3c033e5c70830746c60d98de"
+    },
+    {
+      "url": "Modulos/Defensa/assets/ship.png",
+      "bytes": 1214374,
+      "sha256": "557d0dced268bdaf3604ec34b99d3e90c322d8d3379d8e7a06155fc4181debfd"
+    },
+    {
+      "url": "Modulos/Defensa/assets/small.png",
+      "bytes": 626668,
+      "sha256": "5093589ea51f9355e598abdee59f39097f130365b93c1e37bc73bd378fcffbb6"
+    },
+    {
+      "url": "Modulos/Defensa/audio.js",
+      "bytes": 3893,
+      "sha256": "52458f2fe5cde68ad9951cffd82051a67bf4df0a5efc19681ee83a2b87c14e83"
+    },
+    {
+      "url": "Modulos/Defensa/index.html",
+      "bytes": 17228,
+      "sha256": "56b96a5a9af64dc0db8878775bddc4f043198dfaf1042908cfea88ef43fa5ca1"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/app.js",
+      "bytes": 4776,
+      "sha256": "bb044f4bb9e3321cdce2429dea80ade01bd4e4f632625928fb2f071fa6429edc"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-00.webp",
+      "bytes": 28364,
+      "sha256": "0b90da6c4500e4242a0f42b8397d7c2c44c4134659ba088bfade4abccdc28b82"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-01.webp",
+      "bytes": 9312,
+      "sha256": "bf7e10deec22dc147f66334b0ff66431ff652ebe41164132b50dca94bd6cc32b"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-02.webp",
+      "bytes": 42930,
+      "sha256": "e1160eec0fa210291a24703970767f0a9e5cc676356d3a99b5294e0b8307d935"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-03.webp",
+      "bytes": 18030,
+      "sha256": "08fd514f023333bba97bb40d38a776976d7cd1a35bb92e583f0ab869e5b14bd6"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-04.webp",
+      "bytes": 15808,
+      "sha256": "a3d538824db8946abd0e2a073826cc90659d646bdf812e56e9748502a8be09c5"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-05.webp",
+      "bytes": 11728,
+      "sha256": "296829a3287edcb19ac4f47e30589771d7fb9ffa09f6229c4182e1ff1bae2625"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-06.webp",
+      "bytes": 5112,
+      "sha256": "7e6f5e4ebbdf7dca2b5d37555524ed090ceb3885b4a9274de78cf36182f356ce"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-07.webp",
+      "bytes": 7984,
+      "sha256": "6604f68d65da51fc4d779ee4d484b29b54222a8a8345daa507a62c6e84de2858"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-08.webp",
+      "bytes": 27562,
+      "sha256": "ad4ee025e93ac21548be66b1b448b6ed033cf33a104c71cb693e58d209bba982"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astro-09.webp",
+      "bytes": 21042,
+      "sha256": "77da7938281064f6f6ea396f0fb985e0b4cd71acfb061d50ca5a0918ccc05fa7"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/assets/astronauta-cohete.webp",
+      "bytes": 131948,
+      "sha256": "2df007ddc388f420d078bc3ab2b8a2b5409c0cd4b63c6fc12226f5ec902941b2"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/index.html",
+      "bytes": 5304,
+      "sha256": "4e94e39bbae0fe184a10f8a3448708dcc8702645043158e523a4937cb7c68e9e"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/music.js",
+      "bytes": 2497,
+      "sha256": "78b39207eebbcb555e5d88cb79c24f8d6169ad60354ae863ced36c94ba9ed721"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/rotation.js",
+      "bytes": 5268,
+      "sha256": "9439d25ed539a3dc8a729283f8dab69567b2f7c3b70b15db1fca1bc12087a87d"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/travel.css",
+      "bytes": 3414,
+      "sha256": "06cfc8d6eb1fa1b3189ce1e7d64f20558296c2abc582e48c6b458a6389299802"
+    },
+    {
+      "url": "Modulos/Edad_planetaria/travel.js",
+      "bytes": 7642,
+      "sha256": "9255b48af97fc517d261ca48f2e5ae4674fea672adb24cf6b6ad3266b8e296be"
+    },
+    {
+      "url": "Modulos/Maqueta/assets/luna.webp",
+      "bytes": 21042,
+      "sha256": "77da7938281064f6f6ea396f0fb985e0b4cd71acfb061d50ca5a0918ccc05fa7"
+    },
+    {
+      "url": "Modulos/Maqueta/assets/mercurio.webp",
+      "bytes": 28364,
+      "sha256": "0b90da6c4500e4242a0f42b8397d7c2c44c4134659ba088bfade4abccdc28b82"
+    },
+    {
+      "url": "Modulos/Maqueta/assets/sol.webp",
+      "bytes": 27562,
+      "sha256": "ad4ee025e93ac21548be66b1b448b6ed033cf33a104c71cb693e58d209bba982"
+    },
+    {
+      "url": "Modulos/Maqueta/assets/tierra.webp",
+      "bytes": 42930,
+      "sha256": "e1160eec0fa210291a24703970767f0a9e5cc676356d3a99b5294e0b8307d935"
+    },
+    {
+      "url": "Modulos/Maqueta/assets/venus.webp",
+      "bytes": 9312,
+      "sha256": "bf7e10deec22dc147f66334b0ff66431ff652ebe41164132b50dca94bd6cc32b"
+    },
+    {
+      "url": "Modulos/Maqueta/audio-guide.js",
+      "bytes": 1485,
+      "sha256": "940ae56fa1a156de013c18cb65506c817985322eaf72e32810733f20b7674b6e"
+    },
+    {
+      "url": "Modulos/Maqueta/index.html",
+      "bytes": 4732,
+      "sha256": "da16570880819131a7f225dea2dda514e3fc6178f90cf58e077972852f4bfae7"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-00.webp",
+      "bytes": 28364,
+      "sha256": "0b90da6c4500e4242a0f42b8397d7c2c44c4134659ba088bfade4abccdc28b82"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-01.webp",
+      "bytes": 9312,
+      "sha256": "bf7e10deec22dc147f66334b0ff66431ff652ebe41164132b50dca94bd6cc32b"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-02.webp",
+      "bytes": 42930,
+      "sha256": "e1160eec0fa210291a24703970767f0a9e5cc676356d3a99b5294e0b8307d935"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-03.webp",
+      "bytes": 18030,
+      "sha256": "08fd514f023333bba97bb40d38a776976d7cd1a35bb92e583f0ab869e5b14bd6"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-04.webp",
+      "bytes": 15808,
+      "sha256": "a3d538824db8946abd0e2a073826cc90659d646bdf812e56e9748502a8be09c5"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-05.webp",
+      "bytes": 11728,
+      "sha256": "296829a3287edcb19ac4f47e30589771d7fb9ffa09f6229c4182e1ff1bae2625"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-06.webp",
+      "bytes": 5112,
+      "sha256": "7e6f5e4ebbdf7dca2b5d37555524ed090ceb3885b4a9274de78cf36182f356ce"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-07.webp",
+      "bytes": 7984,
+      "sha256": "6604f68d65da51fc4d779ee4d484b29b54222a8a8345daa507a62c6e84de2858"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-08.webp",
+      "bytes": 27562,
+      "sha256": "ad4ee025e93ac21548be66b1b448b6ed033cf33a104c71cb693e58d209bba982"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-09.webp",
+      "bytes": 21042,
+      "sha256": "77da7938281064f6f6ea396f0fb985e0b4cd71acfb061d50ca5a0918ccc05fa7"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-10.webp",
+      "bytes": 22370,
+      "sha256": "9d3b2fc1f486bb489d49043e2a9e100738522d49006579a2add4d7efd6cf15c9"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-11.webp",
+      "bytes": 13492,
+      "sha256": "78f19abbd9fcc2bee33239d8975fd8c21d656138ce53f8a4317d183dd1ccb273"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-12.webp",
+      "bytes": 33108,
+      "sha256": "b2958990bde9e70ee9db58ebe990e6a73700efd79ad23b4b179757aa1c08a6d4"
+    },
+    {
+      "url": "Modulos/Peso_espacial/assets/astro-13.webp",
+      "bytes": 22598,
+      "sha256": "7c0fa890e71305adfe3f56d6f7bcd7ac82b6b0c1153eb1e5b2e308cdb6b27567"
+    },
+    {
+      "url": "Modulos/Peso_espacial/index.html",
+      "bytes": 14598,
+      "sha256": "225b50f8e457b4696a8de59aa2aac43f48b91c9b52a72db5b7bc57ae80542566"
+    },
+    {
+      "url": "Modulos/Peso_espacial/rotation.js",
+      "bytes": 5268,
+      "sha256": "9439d25ed539a3dc8a729283f8dab69567b2f7c3b70b15db1fca1bc12087a87d"
+    },
+    {
+      "url": "Modulos/Rescate_Selenita/assets/insignia-los-almendros.jpeg",
+      "bytes": 4140,
+      "sha256": "0a4857f8ed25261805026592cb2a884d5ba667386910b3c1ec1afb3e815f7c7c"
+    },
+    {
+      "url": "Modulos/Rescate_Selenita/index.html",
+      "bytes": 52021,
+      "sha256": "a722ff9359cf429f1410c7f2b64c77ced73e1ce16d9c3c04bd4f01fd87c48127"
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/app.js",
+      "bytes": 3229,
+      "sha256": "471a893a198e9ed44ff4a74dac545f2406bbc4869b99972cfe0b8451fbaa4b70"
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/index.html",
+      "bytes": 2751,
+      "sha256": "cf789e7d1b1db63e9b89f23fcaee2edca671a66944db02a1a9556f8ce54840e0"
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/stations.js",
+      "bytes": 12517,
+      "sha256": "d840a2de56a2e54761253bbb3b2240df480009bb261582201631ca9e341a9d1b"
+    },
+    {
+      "url": "Modulos/Tunel_del_tiempo/style.css",
+      "bytes": 4125,
+      "sha256": "05a578a78bf40f67b4bab7e8428d00a8a09f69404b98f4a56bb9a2c856cf72f7"
+    },
+    {
+      "url": "Visuales/almendrino.png",
+      "bytes": 2170905,
+      "sha256": "86aad8eddfcc8285950a732292ccdd0c61ea306fce030c9aa28b241263b814d6"
+    },
+    {
+      "url": "Visuales/astronauta.png",
+      "bytes": 1437180,
+      "sha256": "840233bed0cf7c57a874f61e1793d73a1788c605555be0af25f7e878b77d34d7"
+    },
+    {
+      "url": "Visuales/aterrizaje.png",
+      "bytes": 2216775,
+      "sha256": "ce49d0e4f8a805705467bb31a3829981418b45021282e4f032a56400e32ea4e7"
+    },
+    {
+      "url": "Visuales/estrellas.png",
+      "bytes": 1985433,
+      "sha256": "8256333f87f1dd17eb0ffdaebe18a9c3bbaa82e2caf73d42eb5b34185c6f1333"
+    },
+    {
+      "url": "Visuales/insignia.png",
+      "bytes": 1117467,
+      "sha256": "f19f70f5e408d1a46642b8434f1ef01e7a3f5a9d57c2bea4902c139becce3628"
+    },
+    {
+      "url": "Visuales/saturno.png",
+      "bytes": 1377949,
+      "sha256": "3bd325bcf61c31b1424c3a39cec1b870407fc387f197f3f2815cfc832f0e7945"
+    },
+    {
+      "url": "Visuales/sol.png",
+      "bytes": 1903412,
+      "sha256": "3ac66dddd52b35eab4f78bb37c4337853e876f802b977c8fa697f79853b6fce5"
+    },
+    {
+      "url": "Visuales/tierra.png",
+      "bytes": 2235385,
+      "sha256": "afca7e71001327f02bb29f499504bd658d149997eddcb6510afcdea606369e44"
+    },
+    {
+      "url": "Visuales/via-lactea.jpg",
+      "bytes": 155879,
+      "sha256": "9055c7a801035211706565d838a6fa52ac9e670168b788e0008bd947e55e5c0e"
+    },
+    {
+      "url": "Visuales/voyager.png",
+      "bytes": 2424896,
+      "sha256": "f748811679d5f3343f24c5a6e26bb5455d538b98c0d3a7c6a1e9291215fcdbbc"
+    },
+    {
+      "url": "app-pwa.js",
+      "bytes": 6749,
+      "sha256": "f6fe6391c4b748def8eedebc7fcfb1653d0a829afa58587f23199f2c76b59895"
+    },
+    {
+      "url": "experiencias.css",
+      "bytes": 12639,
+      "sha256": "200d75b23ad425a43943a3180a3389f7de552f64339d2c19840fed40b4f105c0"
+    },
+    {
+      "url": "feria-config.js",
+      "bytes": 176,
+      "sha256": "88af5664531d77ef8b65207bf339f18459a40c5776d92583844df921fccd4771"
+    },
+    {
+      "url": "feria-storage.js",
+      "bytes": 2647,
+      "sha256": "247f18f97ac916c11d51b0e467848909d356efa456d6112efc8643bd827617ef"
+    },
+    {
+      "url": "icons/apple-touch-icon.png",
+      "bytes": 15374,
+      "sha256": "2e2eca3f854a95bbb2b04f6fcb0c59f9cc117ca0d485af09df39dad6d810b846"
+    },
+    {
+      "url": "icons/icon-192.png",
+      "bytes": 17179,
+      "sha256": "ff0f8ba0dc1f27e0e8c4b9fda33583f7408ac13d1251e743897ae18f8eafc4f8"
+    },
+    {
+      "url": "icons/icon-512.png",
+      "bytes": 108269,
+      "sha256": "184c2bb655686d3c8fa9c98e6ad4eaee221c1145f9565236f60b1e23867f9f33"
+    },
+    {
+      "url": "icons/icon-maskable-512.png",
+      "bytes": 80495,
+      "sha256": "bc8a209d6b69985ee85b8e60f7957504e6da045ed34274f1b1ac3e7e71be63a4"
+    },
+    {
+      "url": "index.html",
+      "bytes": 9421,
+      "sha256": "7656e9062de094c161fceea2586e558697ac034002977a29fb99a600a9418cb0"
+    },
+    {
+      "url": "ios-adaptaciones.css",
+      "bytes": 1155,
+      "sha256": "08ae678bb2d2127fd8a63f4703dbafe8a0d78931dbe90048a223279076ac0e96"
+    },
+    {
+      "url": "manifest.webmanifest",
+      "bytes": 772,
+      "sha256": "c51354b9bbac9666cbfc4c3bdd3ea6e6a396d7b25472ab3764bed354d5a94113"
+    },
+    {
+      "url": "menu.css",
+      "bytes": 9839,
+      "sha256": "e9e09aa57a0cae80bfc31e9b9b4ed84d34d128d70bffbd4142969ea6c998853a"
+    },
+    {
+      "url": "navigation.js",
+      "bytes": 2142,
+      "sha256": "736b8550c417e73e59b0108791fee1870f31d0690aa8a47226d29e10b69a5e67"
+    },
+    {
+      "url": "offline-download.js",
+      "bytes": 5870,
+      "sha256": "7cafaf221fa8476cc8c47f6c030035f9eb062f8a9145ab8eac88ca86089587ec"
+    },
+    {
+      "url": "pwa-guard.js",
+      "bytes": 1193,
+      "sha256": "a7df6991f49bfe2fd8b1c944ea0879e6f063867710966bc2b0a93abeec0c3698"
+    },
+    {
+      "url": "pwa.css",
+      "bytes": 2426,
+      "sha256": "3a3d147fe9027ea1d29cee3f9c19bb0a731d69012f3b1e3273457ff19aafa3a3"
+    },
+    {
+      "url": "scanner-ui.js",
+      "bytes": 3182,
+      "sha256": "863b06e7e1962b4ff460a08a343433033183752daff895364894722ee5c5ceaa"
+    },
+    {
+      "url": "setup.css",
+      "bytes": 1754,
+      "sha256": "5a99a8c22ef85987f63d4e2f8275bf206926ffea9af344ac05087cb0512ae1d0"
+    },
+    {
+      "url": "vendor/qr-scanner-LICENSE.txt",
+      "bytes": 1071,
+      "sha256": "f9e6b44d80d0eb44442c7e66af8a756709a61e4d9adf0a54b8951a92ece734e2"
+    },
+    {
+      "url": "vendor/qr-scanner-worker.min.js",
+      "bytes": 43994,
+      "sha256": "f4d8445f5a15c4e5f71a8c8c062c6443f09db370b8d3fe1fbdc7fe7889630d14"
+    },
+    {
+      "url": "vendor/qr-scanner.min.js",
+      "bytes": 15844,
+      "sha256": "0564e4cf84b94cac80213b4f779bd215bb0876a91c19df28baf97766f4fd5484"
+    }
+  ]
+}
