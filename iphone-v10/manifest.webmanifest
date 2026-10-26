@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Feria Científica 2026 V.10 · Liceo Los Almendros",
+  "short_name": "Feria 2026 V.10",
+  "lang": "es-CL",
+  "description": "Un recuerdo conmemorativo de la Feria Científica 2026 del Liceo Los Almendros.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080d26",
+  "theme_color": "#080d26",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

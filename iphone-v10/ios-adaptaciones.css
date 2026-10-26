@@ -1,0 +1,8 @@
+html{-webkit-text-size-adjust:100%;background:#080d26}
+body.iphone-home main{padding-top:calc(24px + env(safe-area-inset-top,0px));padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+body .app-navigation{min-height:calc(58px + env(safe-area-inset-top,0px));padding-top:calc(9px + env(safe-area-inset-top,0px));padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+html body.experience-defensa main.app,html body.experience-aterrizaje main#app{height:calc(100dvh - 58px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+html body.experience-edad_planetaria main{height:calc(100svh - 58px - env(safe-area-inset-top,0px))}
+body.experience-edad_planetaria footer{bottom:max(14px,env(safe-area-inset-bottom,0px))}
+.qr-dialog .qr-card{margin-top:env(safe-area-inset-top,0px);margin-bottom:env(safe-area-inset-bottom,0px);max-height:calc(100svh - 40px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+@media(max-width:600px){body.iphone-home main{padding-top:calc(18px + env(safe-area-inset-top,0px));padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}}
