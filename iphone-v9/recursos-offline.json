@@ -1,6 +1,6 @@
 {
   "version": "iphone-2026-v9",
-  "bytes": 75671127,
+  "bytes": 75671676,
   "files": [
     {
       "url": "Audios/Juegos/LEEME.txt",
@@ -584,8 +584,8 @@
     },
     {
       "url": "Modulos/Rescate_Selenita/index.html",
-      "bytes": 52021,
-      "sha256": "a722ff9359cf429f1410c7f2b64c77ced73e1ce16d9c3c04bd4f01fd87c48127"
+      "bytes": 52570,
+      "sha256": "360ac219daf8df4c5ba13f08649cca69b30e341a4fc4f5d2ac2e58d9852e5814"
     },
     {
       "url": "Modulos/Tunel_del_tiempo/app.js",
