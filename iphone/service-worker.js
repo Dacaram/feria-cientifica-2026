@@ -1,10 +1,11 @@
+// Orientación por misión y reinicio completo v4
 // Actualización Selenita: pantalla móvil completa v2
 importScripts('./feria-config.js','./feria-storage.js','./offline-download.js');
 const BASE=new URL('./',self.location.href),PREFIX='feria2026:'+BASE.pathname+':';
 const SHELL=PREFIX+'shell:'+FeriaConfig.cacheVersion,FULL=PREFIX+'full:'+FeriaConfig.cacheVersion;
 const SHELL_FILES=['index.html','setup.css','pwa.css','app-pwa.js','scanner-ui.js','feria-config.js','feria-storage.js','offline-download.js','manifest.webmanifest','recursos-offline.json','vendor/qr-scanner.min.js','vendor/qr-scanner-worker.min.js','icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-512.png','icons/apple-touch-icon.png'];
 let downloadPromise=null,downloadState=null,sequence=0;
-self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(SHELL);await cache.addAll(SHELL_FILES.map(file=>new Request(new URL(file,BASE).href,{cache:'reload'})));const gameURL=new URL('Modulos/Rescate_Selenita/index.html',BASE).href;const game=await fetch(new Request(gameURL,{cache:'reload'}));if(!game.ok)throw Error('No se pudo actualizar Selenita');await (await caches.open(FULL)).put(gameURL,game);await self.skipWaiting();})()));
+self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(SHELL);await cache.addAll(SHELL_FILES.map(file=>new Request(new URL(file,BASE).href,{cache:'reload'})));const updates=await Promise.all(['Modulos/Rescate_Selenita/index.html','navigation.js','recursos-offline.json'].map(async file=>{const url=new URL(file,BASE).href;const response=await fetch(new Request(url,{cache:'reload'}));if(!response.ok)throw Error('No se pudo actualizar '+file);return {url,response};}));const full=await caches.open(FULL);for(const {url,response} of updates)await full.put(url,response);await self.skipWaiting();})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const name of await caches.keys())if(name.startsWith(PREFIX+'shell:')&&name!==SHELL)await caches.delete(name);await self.clients.claim();})()));
 async function find(url){return (await (await caches.open(FULL)).match(url))||(await (await caches.open(SHELL)).match(url));}
 async function notify(data){for(const client of await self.clients.matchAll({includeUncontrolled:true,type:'window'}))if(client.url.startsWith(BASE.href))try{client.postMessage({version:FeriaConfig.cacheVersion,...data});}catch(e){}}
