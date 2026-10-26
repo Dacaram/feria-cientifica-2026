@@ -1,0 +1,70 @@
+@charset "UTF-8";
+:root{--adventure-mint:#a0ffde;--adventure-gold:#ffd38b}
+body{font-family:"Trebuchet MS",system-ui,sans-serif}
+.app-navigation{box-sizing:border-box;position:relative;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;padding:9px 18px;background:#090f26;border-bottom:1px solid #768db73b;color:#d1ddf4;font:700 9px/1.3 "Trebuchet MS",system-ui,sans-serif;letter-spacing:1px;flex-shrink:0;width:100%}
+.app-navigation a{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;padding:9px 13px;border:1px solid #8ddbc966;border-radius:13px;background:#a0ffde12;color:#baffdf;font-size:13px;text-decoration:none;letter-spacing:0}
+.app-navigation>span{text-align:right}.app-navigation a:focus-visible{outline:3px solid #ffe09b;outline-offset:3px}
+body.experience-defensa,body.experience-aterrizaje{display:block;min-height:100svh;background:#080d26 url('Visuales/estrellas.png') center/cover}
+.experience-defensa main.app,.experience-aterrizaje main#app{width:min(100%,510px);height:calc(100dvh - 58px);min-height:460px;max-height:none;margin:auto;border-top:0;border-radius:0 0 20px 20px}
+.showing-intro.experience-defensa .panel{background:linear-gradient(0deg,#071426f5,#07142680 55%,#0714265c),url('Visuales/estrellas.png') center/cover}
+.showing-intro.experience-defensa .card{border:1px solid #83e3db4d;border-radius:28px;background:#09172b8f;padding:22px 16px;box-shadow:0 15px 50px #0007}
+.showing-intro.experience-defensa h1{font-size:34px;letter-spacing:-.7px;line-height:1.06;text-transform:none}
+.showing-intro.experience-defensa .hero{height:165px;filter:drop-shadow(0 0 22px #8aeaff44)}
+.showing-intro.experience-defensa .hero .planet{width:165px;height:165px}
+.showing-intro.experience-defensa .hero .emblem{top:45px}.showing-intro.experience-defensa .hero .ship{width:115px;right:0;bottom:0;animation:adventure-float 4s ease-in-out infinite}
+.experience-defensa button.primary,.experience-aterrizaje button.primary{background:linear-gradient(110deg,#adffdf,#70e3df);color:#082b33;border-radius:18px;box-shadow:0 5px 24px #91ffda30;font-weight:900}
+.showing-intro.experience-aterrizaje #panel{background:linear-gradient(0deg,#06152bf2,#06152b88 60%,#06152b33),url('Visuales/aterrizaje.png') center/cover}
+.showing-intro.experience-aterrizaje #card{border:1px solid #ffd89855;border-radius:28px;background:#0b1b329e;padding:22px 18px;box-shadow:0 18px 45px #0007}
+.showing-intro.experience-aterrizaje .hero-gap{height:140px;background:url('Modulos/Aterrizaje/assets/lander.webp') center/contain no-repeat;filter:drop-shadow(0 0 20px #ffd38b44);animation:adventure-float 4s ease-in-out infinite}
+.showing-intro.experience-aterrizaje h1{color:#fff3da}.showing-intro.experience-aterrizaje h1 span{color:#ffd38b}
+.experience-adivina_el_planeta{background:#090f28 url('Visuales/estrellas.png') center top/100% auto no-repeat}
+.experience-adivina_el_planeta #intro{position:relative;isolation:isolate;overflow:hidden;border:1px solid #afbfff55;border-radius:28px;padding:30px 25px;background:linear-gradient(120deg,#0b1433ed,#182050aa),url('Visuales/via-lactea.jpg') center/cover}
+.experience-adivina_el_planeta #intro h1{font-size:clamp(34px,6vw,54px);line-height:1.04}
+.experience-adivina_el_planeta #intro em{color:#c5c5ff}.experience-adivina_el_planeta .radar{box-shadow:0 0 35px #8199ff35;background-color:#070e29a8}
+.experience-adivina_el_planeta .primary{background:linear-gradient(110deg,#c8c8ff,#9bdfff);color:#131d39;border-radius:17px;font-weight:900}
+.experience-adivina_el_planeta .rules{background:#111c35dc;border-radius:18px}
+.experience-peso_espacial{background:#090f28 url('Visuales/estrellas.png') top center/100% auto no-repeat}
+.experience-peso_espacial .intro{background:linear-gradient(135deg,#111c3ee8,#111c3e99);border:1px solid #bba0ed66;border-radius:28px;padding:27px}
+.experience-peso_espacial .intro:before{background:url('Visuales/via-lactea.jpg') center/cover;filter:none;opacity:.35}
+.experience-peso_espacial .weight-hero{position:relative;padding:18px 0 26px;min-height:290px;isolation:isolate;overflow:hidden}
+.weight-hero h1{font-size:clamp(40px,7vw,64px);line-height:1.02;max-width:70%;letter-spacing:-1.5px;margin:16px 0}
+.weight-hero h1 span{color:#d2bdff}.weight-tagline{max-width:65%;font-size:15px;color:#e0ddfa!important}
+.weight-rider{position:absolute;right:-3%;bottom:6%;width:36%;height:85%;object-fit:contain;z-index:-1;filter:drop-shadow(0 0 20px #a8a1ff44);animation:adventure-float 5s ease-in-out infinite}
+.experience-peso_espacial .panel{background:#111c35e8;border-color:#8575ba66}.experience-peso_espacial article{background:linear-gradient(130deg,#1b2546,#10182f);border-radius:22px;border-color:#8ca4d54d;box-shadow:0 7px 18px #0003}
+.experience-peso_espacial article .astro-image{border-radius:50%;background:#080d24;box-shadow:0 0 22px #81aaff22}
+.experience-peso_espacial .weight{color:#d0c2ff}.experience-peso_espacial .tag{color:#bfa7ef}
+.experience-edad_planetaria main{height:calc(100svh - 58px);min-height:650px}
+.experience-edad_planetaria .glass{border-radius:26px;border-color:#a5e4e966;box-shadow:0 18px 70px #0008;background:linear-gradient(135deg,#102445f2,#10203aee)}
+.experience-edad_planetaria #boarding{background:linear-gradient(120deg,#0d1d3af5,#0d1d3acc),url('Visuales/via-lactea.jpg') center/cover}
+.experience-edad_planetaria #boarding h1{color:#c4ffe9;letter-spacing:-.8px}.experience-edad_planetaria #boarding>p:first-of-type{font-size:17px}
+.experience-edad_planetaria #boarding .small{font-size:12px}.experience-edad_planetaria .primary{border-radius:16px;background:linear-gradient(110deg,#b4ffdf,#93dfff);font-weight:900}
+.experience-maqueta{background:#080e25 url('Visuales/estrellas.png') top center/100% auto no-repeat}
+.experience-maqueta main{max-width:850px;padding:26px 22px}
+.mission-hero{position:relative;isolation:isolate;overflow:hidden;border:1px solid #f7d28e66;border-radius:26px;padding:32px 25px;margin:25px 0;background:linear-gradient(90deg,#11182ff5,#11182f88),url('Visuales/estrellas.png') center/cover}
+.solar-hero:before{content:"";position:absolute;z-index:-1;width:240px;height:240px;right:-80px;top:-30px;background:url('Visuales/sol.png') center/contain no-repeat;filter:drop-shadow(0 0 20px #ffbb5033)}
+.mission-label{font-size:9px;letter-spacing:1.6px;font-weight:800;color:#ecd89e}
+.mission-hero h1{font-size:clamp(33px,6vw,50px);line-height:1.05;letter-spacing:-1px;max-width:90%;margin:22px 0 16px}.mission-hero p{font-size:14px;color:#e1d8ca;max-width:440px}
+.mission-pill{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:30px;background:#f7bd5f1a;border:1px solid #e6b96d66;color:#ffe0a5;font-size:11px;font-weight:800}
+.experience-maqueta .instructions{background:#131e36dc;border-radius:20px;border-color:#bd945f77;border-left-width:3px}
+.experience-maqueta .station{position:relative;isolation:isolate;display:grid;grid-template-columns:140px 1fr;gap:26px;min-height:195px;margin:16px 0;border:1px solid #6380ac66;border-radius:24px;padding:23px;background:linear-gradient(115deg,#142441ed,#142441a6),url('Visuales/estrellas.png') center/cover;box-shadow:0 7px 26px #0003;overflow:hidden}
+.experience-maqueta .station:first-child{border-color:#d1ac6c88;background:linear-gradient(115deg,#3a2a21ed,#142441b9),url('Visuales/estrellas.png') center/cover}
+.experience-maqueta .station .visual{width:140px;height:140px;filter:drop-shadow(0 0 20px #8db9ff22)}
+.experience-maqueta .number{display:inline-block;color:#c3d6f6;letter-spacing:1.5px;font-size:10px}
+.experience-maqueta .station h2{font-size:28px;margin:5px 0 13px;color:#fff0d0}.experience-maqueta .station button{cursor:pointer;border-radius:14px;background:#a0ffde;color:#082a33;border:0;padding:11px 16px;font-size:14px;font-weight:800;display:inline-flex}
+.experience-maqueta .station button+button{background:transparent;color:#c6ddf6;border:1px solid #809dbe66;font-size:12px}
+.experience-maqueta .pending{font-size:11px;color:#bbd0e8;margin-top:8px}.experience-maqueta .note{font-size:11px;line-height:1.6}
+.experience-tunel_del_tiempo{background:#090e27 url('Visuales/estrellas.png') top center/100% auto no-repeat}
+.experience-tunel_del_tiempo .hero{background:linear-gradient(110deg,#171632ee,#1716327a),url('Visuales/via-lactea.jpg') center/cover;border-color:#c79ae17d;border-radius:27px;padding:32px 27px;min-height:330px}
+.experience-tunel_del_tiempo .hero .portal{border:2px solid #e5b0ff66;box-shadow:inset 0 0 50px #c988ff55,0 0 50px #b37eff22;background:repeating-radial-gradient(ellipse,transparent 0 24px,#dfafff33 25px 27px,transparent 28px 46px)}
+.experience-tunel_del_tiempo h1 em{color:#e0b5ff}.experience-tunel_del_tiempo .eyebrow{color:#e4c1ff}.experience-tunel_del_tiempo .hero p{max-width:360px;font-size:15px;color:#f0e2ff}
+.experience-tunel_del_tiempo .reading{border-radius:25px;border-color:#ac88ce66;background:linear-gradient(130deg,#1c2340,#141b33)}
+.experience-tunel_del_tiempo #numbers button{border-radius:15px;background:#17223e;border-color:#8b7bb866;box-shadow:0 4px 12px #0003}.experience-tunel_del_tiempo #numbers button[aria-current=true]{background:#dec2ff;color:#241534;border-color:#dec2ff;transform:translateY(-2px)}
+.experience-tunel_del_tiempo .station-number{color:#e0bfff}.experience-tunel_del_tiempo .play{background:#e1c4ff;color:#231632}.experience-tunel_del_tiempo .controls button{border-radius:14px;font-weight:700}.experience-tunel_del_tiempo #description{font-size:var(--reading-size,17px);line-height:1.75}
+@keyframes adventure-float{50%{transform:translateY(-8px) rotate(-2deg)}}
+@media(max-width:600px){.app-navigation{padding:8px 13px;gap:12px;font-size:8px}.app-navigation a{font-size:12px;padding:9px 12px}.showing-intro.experience-defensa .panel{padding:20px}.showing-intro.experience-defensa .hero{height:145px}.showing-intro.experience-defensa .hero .planet{width:145px;height:145px}.showing-intro.experience-defensa .hero .emblem{top:35px}.showing-intro.experience-defensa h1{font-size:31px}.showing-intro.experience-aterrizaje #panel{padding:20px}.showing-intro.experience-aterrizaje .hero-gap{height:120px}.experience-peso_espacial .intro{padding:20px}.weight-hero h1{font-size:39px;max-width:80%}.weight-rider{width:40%;right:-5%;bottom:0}.weight-tagline{max-width:64%;font-size:13px}.weight-hero{min-height:285px!important}.mission-label{font-size:8px;letter-spacing:1.2px}.experience-maqueta main{padding:22px 16px}.mission-hero{padding:27px 22px}.mission-hero h1{font-size:35px}.mission-hero p{max-width:85%;font-size:13px}.solar-hero:before{width:200px;height:200px;right:-90px;top:4px}.experience-maqueta .station{grid-template-columns:94px 1fr;gap:18px;padding:18px;min-height:180px}.experience-maqueta .station .visual{width:94px;height:94px}.experience-maqueta .station h2{font-size:25px}.experience-maqueta .station button{font-size:13px;padding:10px 14px}.experience-maqueta .station button+button{font-size:11px}.experience-tunel_del_tiempo main{padding:20px 16px}.experience-tunel_del_tiempo .hero{padding:28px 22px}.experience-tunel_del_tiempo .hero h1{font-size:52px}.experience-adivina_el_planeta #intro{padding:27px 18px}.experience-edad_planetaria main{min-height:680px}.experience-edad_planetaria #boarding{max-height:58%}}
+@media(max-height:700px){.showing-intro.experience-defensa .hero{height:100px}.showing-intro.experience-defensa .hero .planet{width:100px;height:100px}.showing-intro.experience-defensa .hero .emblem{top:25px}.showing-intro.experience-defensa .hero .ship{width:80px}.showing-intro.experience-defensa h1{font-size:27px}.showing-intro.experience-defensa .card{padding:12px}.showing-intro.experience-aterrizaje .hero-gap{height:85px}.showing-intro.experience-aterrizaje #card{padding:12px}.experience-defensa main.app,.experience-aterrizaje main#app{min-height:420px}}
+@media(prefers-reduced-motion:reduce){.showing-intro .hero .ship,.showing-intro .hero-gap,.weight-rider{animation:none!important}}
+
+.quick-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 18px}.quick-facts>span{display:grid;grid-template-columns:28px 1fr;align-items:center;padding:15px;border:1px solid #9f83d25c;border-radius:18px;background:#162544}.quick-facts b{font-size:13px;color:#e9ddff}.quick-facts small{grid-column:2;font-size:11px;color:#bdc7e3}.learn-more summary{font-size:13px;color:#e1d3ff}.learn-more p{font-size:14px;line-height:1.6}.learn-more{margin-bottom:20px}@media(max-width:400px){.quick-facts>span{padding:12px 10px}.quick-facts b{font-size:12px}.quick-facts small{font-size:10px}}
+
+.solar-hero::before{mix-blend-mode:screen}
