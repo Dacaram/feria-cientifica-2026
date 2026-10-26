@@ -1,3 +1,4 @@
+// Actualización Selenita: pantalla móvil completa v2
 importScripts('./feria-config.js','./feria-storage.js','./offline-download.js');
 const BASE=new URL('./',self.location.href),PREFIX='feria2026:'+BASE.pathname+':';
 const SHELL=PREFIX+'shell:'+FeriaConfig.cacheVersion,FULL=PREFIX+'full:'+FeriaConfig.cacheVersion;
