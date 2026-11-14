@@ -53,7 +53,7 @@ function speak(t,token){return new Promise(resolve=>{
  try{ss.speak(u)}catch(e){done()}
  });}
 async function count(token){phase='countdown';status('Prepara tu posición. Cuenta regresiva…');for(const n of [3,2,1]){if(token!==activeId)return;$('countdown').textContent=n;await speak(String(n),token)}if(token===activeId)$('countdown').textContent='¡YA!'}
-async function launchSegment(token){if(token!==activeId)return;show();resetUI();phase='intro';status('Escucha las instrucciones del ejercicio '+(exercise+1)+'.');if(!E[exercise].audioSrc){await speak(E[exercise].voice,token);if(token!==activeId)return;await count(token)}if(token!==activeId)return;
+async function launchSegment(token){if(token!==activeId)return;show();resetUI();phase='intro';status('Escucha las instrucciones del ejercicio '+(exercise+1)+'.');await speak(E[exercise].voice,token);if(token!==activeId)return;await count(token);if(token!==activeId)return;
 const clip=E[exercise];const src=clip.audioSrc||originalAudio;if(audio.getAttribute('src')!==src)audio.src=src;
 phase='playing';status('Audio del ejercicio '+(exercise+1)+' en curso.');try{audio.currentTime=E[exercise].audioSrc?0:E[exercise].start;audio.muted=false;await audio.play();}catch(e){status('El teléfono bloqueó el sonido. Toca «Terminar» y luego «Iniciar» para activar el audio.');$('error').textContent='Revisa que Chrome tenga permiso para reproducir audio.';}}
 function cancelRest(){if(restTimer!==null)clearTimeout(restTimer);restTimer=null;if(restResolve){const resolve=restResolve;restResolve=null;resolve(false)}}
