@@ -1,0 +1,51 @@
+name: Publicar APK Entrena Voz 10
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'entrenador-android/**'
+      - 'entrenador-voz/index.html'
+      - 'entrenador-voz/audios/**'
+      - '.github/workflows/entrenavoz-10-android.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Instalar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Configurar Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+      - name: Incorporar aplicación y audios originales
+        run: |
+          mkdir -p entrenador-android/app/src/main/assets/audios
+          cp entrenador-voz/index.html entrenador-android/app/src/main/assets/index.html
+          cp entrenador-voz/audios/{1,2,3,4,5}.mp3 entrenador-android/app/src/main/assets/audios/
+      - name: Construir APK Android
+        run: cd entrenador-android && gradle --no-daemon assembleRelease
+      - name: Firmar APK instalable
+        run: |
+          KEYSTORE="$RUNNER_TEMP/entrenavoz-v2.keystore"
+          keytool -genkeypair -keystore "$KEYSTORE" -storepass 'EntrenaVozV2Local' -keypass 'EntrenaVozV2Local' -alias entrenavoz2 -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=ENTRENA VOZ V2, OU=App, O=Dacaram, C=CL' -noprompt
+          BUILD_TOOLS="$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          "$BUILD_TOOLS/zipalign" -f -v 4 entrenador-android/app/build/outputs/apk/release/app-release-unsigned.apk "$RUNNER_TEMP/aligned.apk"
+          "$BUILD_TOOLS/apksigner" sign --ks "$KEYSTORE" --ks-pass 'pass:EntrenaVozV2Local' --key-pass 'pass:EntrenaVozV2Local' --ks-key-alias entrenavoz2 --out ENTRENA-VOZ-10.apk "$RUNNER_TEMP/aligned.apk"
+          "$BUILD_TOOLS/apksigner" verify --verbose ENTRENA-VOZ-10.apk
+      - name: Publicar descarga
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view entrenavoz-10 >/dev/null 2>&1; then
+            gh release upload entrenavoz-10 ENTRENA-VOZ-10.apk --clobber
+          else
+            gh release create entrenavoz-10 ENTRENA-VOZ-10.apk --target "$GITHUB_SHA" --title "ENTRENA VOZ — 10 ejercicios" --notes "Rutina de 10 ejercicios con ilustraciones, voz en español, tiempos y descansos configurables. App Android independiente de la primera versión."
+          fi
