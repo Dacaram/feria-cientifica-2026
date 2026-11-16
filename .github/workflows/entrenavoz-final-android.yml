@@ -1,0 +1,59 @@
+name: Compilar APK ENTRENA VOZ FINAL
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'entrenador-voz-final/**'
+      - '.github/workflows/entrenavoz-final-android.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+      - name: Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Configurar Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+      - name: Preparar aplicación final con tus 30 audios
+        run: |
+          cp -a entrenador-android entrenador-android-final
+          sed -i 's/entrenavozv2/entrenavozfinal/g' entrenador-android-final/app/build.gradle
+          sed -i 's/versionCode 2/versionCode 4/' entrenador-android-final/app/build.gradle
+          sed -i "s/versionName '2.0'/versionName '4.0'/" entrenador-android-final/app/build.gradle
+          sed -i 's/entrenavozv2/entrenavozfinal/g' entrenador-android-final/app/src/main/java/cl/dacaram/entrenavozv2/MainActivity.java
+          sed -i 's/ENTRENA·VOZ 10/ENTRENA·VOZ FINAL/g' entrenador-android-final/app/src/main/AndroidManifest.xml
+          mkdir -p entrenador-android-final/app/src/main/assets/audios/conteo
+          cp entrenador-voz-final/index.html entrenador-android-final/app/src/main/assets/index.html
+          cp entrenador-voz-final/audios/conteo/*.mp3 entrenador-android-final/app/src/main/assets/audios/conteo/
+          test "$(find entrenador-android-final/app/src/main/assets/audios/conteo -name '*.mp3' | wc -l)" -eq 30
+          grep -q 'exerciseRestChoices' entrenador-android-final/app/src/main/assets/index.html
+          grep -q 'pauseSession' entrenador-android-final/app/src/main/assets/index.html
+      - name: Compilar APK Android
+        run: cd entrenador-android-final && gradle --no-daemon assembleRelease
+      - name: Firmar y verificar APK
+        run: |
+          PASS="$(openssl rand -hex 20)"
+          KEYSTORE="$RUNNER_TEMP/entrenavoz-final.keystore"
+          keytool -genkeypair -keystore "$KEYSTORE" -storepass "$PASS" -keypass "$PASS" -alias entrenavozfinal -keyalg RSA -keysize 3072 -validity 10000 -dname 'CN=ENTRENA VOZ FINAL, OU=App, O=Dacaram, C=CL' -noprompt
+          BUILD_TOOLS="$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          "$BUILD_TOOLS/zipalign" -f 4 entrenador-android-final/app/build/outputs/apk/release/app-release-unsigned.apk "$RUNNER_TEMP/aligned.apk"
+          "$BUILD_TOOLS/apksigner" sign --ks "$KEYSTORE" --ks-pass "pass:$PASS" --key-pass "pass:$PASS" --ks-key-alias entrenavozfinal --out ENTRENA-VOZ-FINAL.apk "$RUNNER_TEMP/aligned.apk"
+          "$BUILD_TOOLS/apksigner" verify --verbose ENTRENA-VOZ-FINAL.apk
+      - name: Publicar descarga APK final
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view entrenavoz-final >/dev/null 2>&1; then
+            gh release upload entrenavoz-final ENTRENA-VOZ-FINAL.apk --clobber
+          else
+            gh release create entrenavoz-final ENTRENA-VOZ-FINAL.apk --target "$GITHUB_SHA" --title "ENTRENA·VOZ FINAL — 10 ejercicios" --notes "Versión final: conteo personalizado con tus 30 números, favoritos por ejercicio, 30 segundos por ejercicio, selección de 1 a 5 series, seis descansos configurables (5/10/20/30/40/60 segundos) tanto entre ejercicios como entre series, y botón único Iniciar/Pausa/Continuar. APK independiente de las anteriores."
+          fi
