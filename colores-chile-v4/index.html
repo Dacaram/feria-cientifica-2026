@@ -222,7 +222,7 @@ render();
  info.append(hsv,alt);
  const status=$("status");camera.append(status);
  const badge=document.createElement("div");badge.id="grayBadge";badge.textContent="○ Sin calibrar";camera.append(badge);
- const rail=document.createElement("div");rail.id="quickRail";camera.append(rail);
+ const rail=document.createElement("div");rail.id="quickRail";camera.append(rail);rail.addEventListener("pointerdown",e=>e.stopPropagation());rail.addEventListener("pointermove",e=>e.stopPropagation());
  const buttons=[
  ["💾","Guardar color","saveColor"],
  ["📚","Colores guardados","colors"],
