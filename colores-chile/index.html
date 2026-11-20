@@ -4,6 +4,46 @@
 <style>
 :root{color-scheme:dark;--bg:#091623;--panel:#14293d;--line:#34536b;--txt:#f4f8fa;--muted:#b5c8d3;--accent:#85e7cc}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.45 system-ui,Arial,sans-serif}main{max-width:800px;margin:auto;padding:12px 12px 60px}h1{margin:4px 0;font-size:26px;line-height:1.1}h1 span{color:var(--accent)}header p{margin:4px 0 14px;color:var(--muted);font-size:13px}nav{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin:10px 0 16px}button,.pick{appearance:none;border:1px solid #48627a;background:#203e56;color:white;padding:12px 11px;border-radius:11px;font:600 14px system-ui;cursor:pointer;text-align:center}button.primary,.active{background:var(--accent);color:#062b29;border-color:var(--accent)}button:disabled{opacity:.5}.page{display:none}.page.active{display:block}.panel{padding:15px;border:1px solid var(--line);background:var(--panel);border-radius:15px;margin-bottom:14px}h2{font-size:17px;margin:0 0 10px}h3{margin:8px 0;font-size:15px}.camera{position:relative;width:100%;aspect-ratio:4/3;background:#08101b;border-radius:12px;overflow:hidden;touch-action:none;border:1px solid #415974}.camera video,.camera img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.camera img{display:none}.camera .placeholder{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:22px;color:#ccdce5;pointer-events:none}.target{position:absolute;top:50%;left:50%;width:36px;height:36px;border:2px solid white;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 2px #000a,0 0 0 5px #fff5;pointer-events:none;z-index:2}.target:before,.target:after{content:"";position:absolute;top:50%;left:50%;background:white;transform:translate(-50%,-50%)}.target:before{width:14px;height:2px}.target:after{width:2px;height:14px}.actions{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.actions>*{flex:1;min-width:130px}.pick input{display:none}.status,.sub{font-size:13px;color:var(--muted);margin:8px 0}.error{background:#67323a;color:#fff1e9;padding:10px;border-radius:8px}.chip{height:112px;border-radius:12px;background:#65788a;border:1px solid #ffffff44}.name{font-size:27px;font-weight:800;margin:8px 0 0}.mini{font-size:12px;color:#cfdae1}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.metrics div{padding:10px;background:#213d53;border-radius:9px}.metrics small{display:block;color:#baccda}.metrics b{word-break:break-word}label:not(.pick){display:block;font-size:13px;font-weight:700;margin:10px 0 4px}input:not([type=file]),textarea,select{display:block;width:100%;background:#081b2c;color:white;border:1px solid #567087;border-radius:8px;padding:11px;font:15px system-ui}textarea{min-height:68px}.entry{padding:11px;border:1px solid #36536b;border-radius:12px;background:#1b354b;margin-top:10px;display:flex;gap:10px;align-items:flex-start}.entry .sw{width:53px;height:53px;border:1px solid #ffffff66;border-radius:9px;flex:0 0 auto}.entry .body{flex:1;min-width:0}.entry strong{display:block}.entry small{color:#ccd7e0;display:block}.entry button{font-size:12px;padding:7px}.hint{background:#274354;padding:10px;border-left:3px solid #ecc687;font-size:12px;border-radius:7px;margin-top:12px}footer{font-size:12px;color:#baccda;text-align:center;margin-top:24px}
+
+/* Interfaz compacta v3.1: cámara protagonista */
+.page.active{display:block;background:transparent;color:var(--txt)}
+header{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:0 2px}
+header h1{font-size:20px;margin:4px 0}
+header p{font-size:11px;margin:0 0 4px}
+#tabs{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:6px 0 9px}
+#tabs button{font-size:12px;line-height:1.1;padding:10px 2px;min-height:42px}
+#identify>.panel:first-child{border:0;background:transparent;padding:0;margin-bottom:9px}
+#identify>.panel:first-child>h2{display:none}
+#camera{width:100%;height:75dvh;min-height:400px;max-height:850px;aspect-ratio:auto;border:1px solid #507286;border-radius:13px;position:relative;box-shadow:0 6px 20px #0004}
+#camera video,#camera img{object-fit:cover}
+#camHud{position:absolute;z-index:5;top:9px;left:9px;right:9px;min-height:70px;background:rgba(14,22,29,.83);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);border:1px solid #ffffff55;border-radius:9px;padding:8px;display:flex;gap:10px;align-items:center;pointer-events:none}
+#camSwatch{width:54px;height:54px;flex:0 0 54px;background:#68717c;border:1.5px solid #f5f5f5;border-radius:3px;box-shadow:0 1px 8px #0008}
+#camInfo{min-width:0;flex:1}
+#camName{font-weight:750;font-size:18px;line-height:1.15;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#camHex,#camRgb{font-size:12px;color:#d2e1ec;line-height:1.45;font-variant-numeric:tabular-nums}
+#camTools{position:absolute;z-index:6;bottom:9px;left:9px;right:9px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:6px;margin:0}
+#camTools button,#camTools .pick{font-size:11px;line-height:1.14;padding:11px 4px;border:1px solid #c1d2dd6b;background:rgba(9,28,43,.84);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);border-radius:9px;min-width:0;display:grid;place-content:center;min-height:44px}
+#camTools #cameraBtn{background:rgba(117,231,202,.91);border:1px solid #87fbe1;color:#05332c}
+#aimCorners{position:absolute;z-index:2;width:134px;height:112px;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+#aimCorners i{position:absolute;width:22px;height:22px;border:0 solid #fffcf5;filter:drop-shadow(0 1px 2px #000c)}
+#aimCorners .tl{top:0;left:0;border-top-width:2px;border-left-width:2px}
+#aimCorners .tr{top:0;right:0;border-top-width:2px;border-right-width:2px}
+#aimCorners .bl{bottom:0;left:0;border-bottom-width:2px;border-left-width:2px}
+#aimCorners .br{bottom:0;right:0;border-bottom-width:2px;border-right-width:2px}
+#camera .target{width:25px;height:25px;border:3px solid #f4e72b;box-shadow:0 0 0 2px #0009,0 0 8px #fff5}
+#camera .target::before,#camera .target::after{display:none}
+#identify>.panel:nth-child(2){padding:12px;margin-bottom:0}
+#identify>.panel:nth-child(2)>h2,#identify .chip,#identify .name{display:none}
+#identify .metrics{margin:6px 0;grid-template-columns:repeat(2,minmax(0,1fr))}
+#identify .metrics div{padding:8px}
+#identify .metrics small{font-size:11px}
+#identify .metrics b{font-size:13px}
+#identify .status{padding:0 4px;margin:6px 0;font-size:12px}
+#identify .status.error{padding:9px}
+#identify .actions:not(#camTools){gap:7px;margin:8px 0}
+#identify .hint{margin:9px 0 0}
+@media(max-width:380px){#camHud{padding:6px;gap:8px;min-height:60px}#camSwatch{width:46px;height:46px;flex-basis:46px}#camName{font-size:16px}#camHex,#camRgb{font-size:11px}header p{display:none}#camera{height:73dvh}}
+
 </style></head><body><main>
 <header><h1>🎨 Colores <span>Chile</span></h1><p>Identificar · Aprender · Pintar — Versión web con cámara en vivo</p></header>
 <nav id="tabs"><button data-page="identify" class="active">Identificar</button><button data-page="colors">Mis colores</button><button data-page="learn">Aprender</button><button data-page="mix">Mis mezclas</button></nav>
@@ -53,7 +93,7 @@ el("cameraBtn").disabled=true;status("Solicitando permiso para utilizar la cáma
 try{let s=await navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:"environment"}}});stop();state.stream=s;vid.srcObject=s;vid.style.display="block";photo.style.display="none";el("placeholder").style.display="none";state.mode="video";await vid.play();el("cameraBtn").textContent="Apagar cámara";status("Cámara encendida. Toca cualquier zona de la imagen para seleccionar el color.");}
 catch(e){stop();let n=e.name||"Error";status(n==="NotAllowedError"?"No se autorizó la cámara. Permite el acceso en Chrome.":n==="NotReadableError"?"No se pudo usar la cámara. Cierra otras aplicaciones que la ocupen.":"No se pudo abrir la cámara ("+n+").",true)}finally{el("cameraBtn").disabled=false}}
 el("cameraBtn").addEventListener("click",camera);
-function drawCover(source){let w=source.videoWidth||source.naturalWidth,h=source.videoHeight||source.naturalHeight;if(!w||!h)return false;let k=Math.max(canvas.width/w,canvas.height/h),dw=w*k,dh=h*k;ctx.drawImage(source,(canvas.width-dw)/2,(canvas.height-dh)/2,dw,dh);return true}
+function drawCover(source){let rect=el("camera").getBoundingClientRect();let scale=Math.min(1.6,960/Math.max(rect.width,rect.height,1));let cw=Math.max(2,Math.round(rect.width*scale)),ch=Math.max(2,Math.round(rect.height*scale));if(canvas.width!==cw||canvas.height!==ch){canvas.width=cw;canvas.height=ch}let w=source.videoWidth||source.naturalWidth,h=source.videoHeight||source.naturalHeight;if(!w||!h)return false;let k=Math.max(canvas.width/w,canvas.height/h),dw=w*k,dh=h*k;ctx.drawImage(source,(canvas.width-dw)/2,(canvas.height-dh)/2,dw,dh);return true}
 function sample(){let x=Math.max(0,Math.min(canvas.width-1,Math.round(state.point.x*(canvas.width-1)))),y=Math.max(0,Math.min(canvas.height-1,Math.round(state.point.y*(canvas.height-1))));let xx=Math.max(0,x-4),yy=Math.max(0,y-4),w=Math.min(9,canvas.width-xx),h=Math.min(9,canvas.height-yy),data=ctx.getImageData(xx,yy,w,h).data;let sum=[0,0,0],n=0;for(let i=0;i<data.length;i+=4){if(!data[i+3])continue;for(let j=0;j<3;j++)sum[j]+=data[i+j];n++}if(!n)return;let rgb=sum.map(v=>Math.round(v/n)),hx="#"+rgb.map(v=>v.toString(16).padStart(2,"0")).join("").toUpperCase(),c=nearest(rgb),v=hsl(...rgb);state.selected={name:c.best.name,family:c.best.family,hex:hx,rgb:rgb,date:new Date().toISOString()};el("chip").style.background=hx;el("name").textContent=c.best.name;el("family").textContent="Familia: "+c.best.family+" · lectura orientativa";el("hex").textContent=hx;el("rgb").textContent=rgb.join(", ");el("hue").textContent=v[0]+"° · "+v[1]+" %";el("light").textContent=v[2]+" %";el("alternatives").textContent=c.alternatives.length?"Alternativas: "+c.alternatives.join(" / "):"";el("saveColor").disabled=el("sendToMix").disabled=false;el("learnSelected").textContent="La aplicación indica: "+c.best.name+" · "+hx}
 function frame(t){if(state.mode==="video"&&vid.readyState>=2&&t-state.last>220){try{if(drawCover(vid))sample()}catch(e){status("Error al analizar imagen: "+e.name,true)}state.last=t}requestAnimationFrame(frame)}requestAnimationFrame(frame);
 function touch(e){if(state.mode==="none")return;let r=el("camera").getBoundingClientRect();state.point.x=Math.max(0,Math.min(1,(e.clientX-r.left)/r.width));state.point.y=Math.max(0,Math.min(1,(e.clientY-r.top)/r.height));el("target").style.left=(100*state.point.x)+"%";el("target").style.top=(100*state.point.y)+"%";if(state.mode==="photo"&&state.image){drawCover(state.image);sample()}}
@@ -74,4 +114,32 @@ document.addEventListener("visibilitychange",()=>{if(document.hidden)stop()});ad
 render();
 })();
 </script>
+
+<script>
+/* Los datos quedan sincronizados con el selector ya existente. */
+(function(){
+  const camera=document.getElementById("camera");
+  if(!camera || document.getElementById("camHud"))return;
+  const hud=document.createElement("div");hud.id="camHud";
+  hud.innerHTML='<div id="camSwatch"></div><div id="camInfo"><div id="camName">Apunta la cámara</div><div id="camHex">Muestra de color</div><div id="camRgb">Toca para seleccionar</div></div>';
+  camera.appendChild(hud);
+  const corners=document.createElement("div");corners.id="aimCorners";
+  corners.innerHTML='<i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i>';
+  camera.appendChild(corners);
+  const tools=document.querySelector("#identify .panel:first-child .actions");
+  if(tools){tools.id="camTools";camera.appendChild(tools);tools.addEventListener("pointerdown",e=>e.stopPropagation());tools.addEventListener("pointermove",e=>e.stopPropagation());}
+  const name=document.getElementById("name"),hex=document.getElementById("hex"),rgb=document.getElementById("rgb");
+  const refresh=()=>{
+    const value=hex.textContent.trim(),hasColor=/^#[0-9A-F]{6}$/i.test(value);
+    document.getElementById("camName").textContent=hasColor?name.textContent:"Apunta la cámara";
+    document.getElementById("camHex").textContent=hasColor?"HEX "+value:"Muestra de color";
+    document.getElementById("camRgb").textContent=hasColor?"RGB "+rgb.textContent:"Toca para seleccionar";
+    document.getElementById("camSwatch").style.background=hasColor?value:"#68717c";
+  };
+  new MutationObserver(refresh).observe(name,{childList:true,subtree:true,characterData:true});
+  new MutationObserver(refresh).observe(hex,{childList:true,subtree:true,characterData:true});
+  refresh();
+})();
+</script>
+
 </body></html>
